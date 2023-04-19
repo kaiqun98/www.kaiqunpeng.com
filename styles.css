@@ -1,0 +1,87 @@
+/* General styles */
+/* Background Picture */
+body {
+    background-image: url("./pic.png");
+    background-size: repeat;
+    zoom:125%
+}
+
+body::before {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #B3A369;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+h7 {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding: 0;
+  }
+  
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    max-width: auto; /* Adjust the maximum width as needed */
+    padding: 20px; /* Add some padding to the container */
+    display: flex; /* Use Flexbox layout */
+    flex-direction: row; /* Set the direction of the flex items to horizontal */
+    align-items: center; /* Vertically center the flex items */
+  }
+
+  .image-container {
+    float: right; /* Float the image container to the right */
+    margin-left: 100px; /* Add some margin to the left of the image container */
+    
+  }
+
+p {
+    font-size: 16px;
+    margin-right:0px;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Links Setting */
+/* Unvisited link color */
+a:link {
+    color: #006600;
+}
+
+/* Visited link color */
+a:visited {
+    color: #993366;
+}
+
+/* Active link color */
+a:active {
+    color: #006600;
+}
+
