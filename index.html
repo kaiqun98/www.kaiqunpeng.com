@@ -25,6 +25,13 @@
           // Call the updateTime() function once per second
           setInterval(updateTime, 1000);
         </script>
+
+        <script>
+          function navigate(url) {
+            window.location.href = url;
+          }
+        </script>
+
       </head>
       <body>
       
@@ -34,31 +41,45 @@
             <h2>AE Student</h2>
           </header>
 
-          <table class="my-Index">
-              <tr>
-                <th>Articles</th>
-                <th>Personal Life</th>
-                <th>Games</th>
-              </tr>
-            </table>
+          <table style="width: 100%;">
+            <tr>
+              
+              <th class="my-Index" style="width: calc(33.33% - 2px);">
+                <div class="clickable-box" onclick="navigate('Articles.html')">
+                  Articles
+                </div>
+              </th>
+              <th class="my-Index" style="width: calc(33.33% - 2px);">
+                <div class="clickable-box" onclick="navigate('Personal.html')">
+                  Personal Space
+                </div>
+              </th>
+              <th class="my-Index" style="width: calc(33.33% - 2px);">
+                <div class="clickable-box" onclick="navigate('Games.html')">
+                  Games
+                </div>
+              </th>
+            </tr>
           </table>
-
+          
           <style>
             .my-Index {
               margin-top: 0px;
-              padding: 10px 20px;
+              padding: 10px;
               background-color: #003057;
               color: white;
               border: 3px solid black;
               border-radius: 0px;
               cursor: pointer;
-              width: 100%
+              text-align: center;
             }
-            
+          
             .my-Index:hover {
               color: #e33c37;
+              background-color: #014f8f
             }
           </style>
+          
           
           <!-- Introduction -->
           <section>
@@ -115,7 +136,7 @@
                 background-color: #000000;
               }
             </style>
-            <table id="myTable" style="display: none;">
+            <table id="myTable" style="display: none; width: 100%;">
               <tr>
                 <td style="vertical-align: top;">
                   <ul style="text-indent: 40px; font-size: 16px;">
@@ -140,8 +161,8 @@
                   <p style="text-indent: 40px; font-size: 15px;"><a href="https://www.aoe.vt.edu/">Virginia Tech AE</a></p>
                   <p style="text-indent: 40px; font-size: 15px;"><a href="https://ae.gatech.edu/">Georgia Tech AE</a></p>
                 </td>
-                <td style="vertical-align: center; padding-right: 150px; padding-bottom: 20px; width: 50%;">
-                  <img src="Plane.gif" onmouseover="this.src='Lauch.gif'" onmouseout="this.src='Plane.gif'" alt="Your Image" style="float: right; max-width: 400px; margin-right: 10px;">
+                <td style="vertical-align: center; width: 50%;">
+                  <img src="Plane.gif" onmouseover="this.src='Lauch.gif'" onmouseout="this.src='Plane.gif'" alt="Your Image" style="float: right; max-width: 70%; margin-right: 50%;">
                 </td>
               </tr>
             </table>
