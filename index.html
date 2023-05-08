@@ -33,14 +33,40 @@
             <h1>Kaiqun Peng</h1>
             <h2>AE Student</h2>
           </header>
+
+          <table class="my-Index">
+              <tr>
+                <th>Articles</th>
+                <th>Personal Life</th>
+                <th>Games</th>
+              </tr>
+            </table>
+          </table>
+
+          <style>
+            .my-Index {
+              margin-top: 0px;
+              padding: 10px 20px;
+              background-color: #003057;
+              color: white;
+              border: 3px solid black;
+              border-radius: 0px;
+              cursor: pointer;
+              width: 100%
+            }
+            
+            .my-Index:hover {
+              color: #e33c37;
+            }
+          </style>
           
           <!-- Introduction -->
           <section>
-            <h3>About Me</h3>
+            <h4>About Me</h4>
             <div class="container">
                 <p>Hello! My name is Kaiqun, and you found me on the internet. <br>
-                    I am currently a Ph.D. student majoring in Aerospace Engineering at Georgia Tech.<br>
-                    My current research interests are in interface tracking methods for two-phase flows<br>
+                    I am currently a Ph.D. student majoring in Aerospace Engineering <br>
+                    My current research interests are in interface tracking methods<br> for two-phase flows
                     and detonation wave simulation.</p>
                 <div class="image-container">
                   <img src="./My_photo.jpg" alt="An example image">
@@ -115,7 +141,7 @@
                   <p style="text-indent: 40px; font-size: 15px;"><a href="https://ae.gatech.edu/">Georgia Tech AE</a></p>
                 </td>
                 <td style="vertical-align: center; padding-right: 150px; padding-bottom: 20px; width: 50%;">
-                  <img src="Plane.gif" alt="Your Image" style="float: right; max-width: 400px; margin-right: 10px;">
+                  <img src="Plane.gif" onmouseover="this.src='Lauch.gif'" onmouseout="this.src='Plane.gif'" alt="Your Image" style="float: right; max-width: 400px; margin-right: 10px;">
                 </td>
               </tr>
             </table>
@@ -140,6 +166,10 @@
             <p>The current time is: <span id="current-time"></span></p>
           </section>
           
-      
+          <footer>
+            <p style="font-size: 12px;">Copyright © 2023 Kaiqun Peng </p>
+            <p style="font-size: 12px;">
+              All rights reserved. Images and Gifs used on this website are taken from <a href="https://gifer.com/en">https://gifer.com/en</a>.</p>
+          </footer>
       </body>
 </html>
