@@ -3,8 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.25">
-        <title>Kaiqun's Personal Space</title>
+        <title>Your Name - Personal Website</title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+          // Define a function to update the current time
+          function updateTime() {
+            // Get the current time
+            const currentTime = new Date();
+    
+            // Format the time as HH:MM:SS
+            const hours = currentTime.getHours().toString().padStart(2, '0');
+            const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+            const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+    
+            // Display the current time in the HTML
+            const currentTimeElement = document.getElementById('current-time');
+            currentTimeElement.textContent = formattedTime;
+          }
+    
+          // Call the updateTime() function once per second
+          setInterval(updateTime, 1000);
+        </script>
       </head>
       <body>
       
@@ -43,9 +63,83 @@
             <ul>
                 <li>Phone Number 470-662-4677 (US)</li>
                 <li><a href="https://www.linkedin.com/in/kaiqun-peng-ae-doc">My Linkedin</a></li>
-                <li><a href="./Kaiqun_Peng_Resume.pdf" target="_blank">Resume (Old)</a></li>
+                <li><a href="./Kaiqun_Peng_Resume.pdf" target="_blank">Resume (Old Need to renew)</a></li>
             </ul>
           </section>
+
+          <section>
+          
+          </section>
+
+          <h3>Education</h3>
+          <div>
+            <button class="my-button" onclick="revealAll()">Click to view My Education</button>
+            <style>
+              .my-button {
+                margin-top: 8px;
+                padding: 10px 20px;
+                background-color: #003057;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+              }
+              
+              .my-button:hover {
+                background-color: #000000;
+              }
+            </style>
+            <table id="myTable" style="display: none;">
+              <tr>
+                <td style="vertical-align: top;">
+                  <ul style="text-indent: 40px; font-size: 16px;">
+                    <li>BS 
+                      <ul>
+                        <li>Virginia Tech AE 2016-2018</li>
+                        <li>Georgia Tech AE 2018-2021 </li>
+                      </ul>
+                    </li>
+                    <li>MS
+                      <ul>
+                        <li>Georgia Tech AE 2021-2022 </li>
+                        <li>Georgia Tech CSE 2023-Current </li>
+                      </ul>
+                    </li>
+                    <li>Ph.D
+                      <ul>
+                        <li>Georgia Tech AE 2022-Current </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p style="text-indent: 40px; font-size: 15px;"><a href="https://www.aoe.vt.edu/">Virginia Tech AE</a></p>
+                  <p style="text-indent: 40px; font-size: 15px;"><a href="https://ae.gatech.edu/">Georgia Tech AE</a></p>
+                </td>
+                <td style="vertical-align: center; padding-right: 150px; padding-bottom: 20px; width: 50%;">
+                  <img src="Plane.gif" alt="Your Image" style="float: right; max-width: 400px; margin-right: 10px;">
+                </td>
+              </tr>
+            </table>
+          </div>
+          <script>
+            var table;
+        
+            function revealAll() {
+              if (table.style.display == "none" || table.style.display == "") {
+                table.style.display = "table";
+              } else {
+                table.style.display = "none";
+              }
+            }
+        
+            window.onload = function() {
+              table = document.getElementById("myTable");
+            }
+          </script>
+          
+          <section>
+            <p>The current time is: <span id="current-time"></span></p>
+          </section>
+          
       
       </body>
 </html>
