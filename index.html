@@ -215,7 +215,27 @@
           <section>
             <p>The current time is: <span id="current-time"></span></p>
           </section>
-          <p style="font-size: 12px;">You are visitor number <span id="visitorCount"></span></p>
+          <p>Visitor count: <span id="visitorCount"></span></p>
+  
+  <script>
+    function getVisitorCount() {
+      // Check if 'visitorCount' exists in localStorage
+      if (localStorage.getItem('visitorCount') === null) {
+        // If it doesn't exist, set the initial count to 1
+        localStorage.setItem('visitorCount', '1');
+      } else {
+        // If it exists, increment the count by 1
+        let currentCount = parseInt(localStorage.getItem('visitorCount'));
+        localStorage.setItem('visitorCount', (currentCount + 1).toString());
+      }
+      
+      // Display the visitor count on the page
+      document.getElementById('visitorCount').innerText = localStorage.getItem('visitorCount');
+    }
+
+    // Call the function to update and display the visitor count
+    getVisitorCount();
+  </script>
           <footer>
             <p style="font-size: 12px;">Copyright © 2023 Kaiqun Peng </p>
             <p style="font-size: 12px;">
