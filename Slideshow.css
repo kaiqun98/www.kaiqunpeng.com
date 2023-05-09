@@ -8,9 +8,15 @@
 .column {
   flex: 50%;
   padding: 0 4px;
+  width: 25%;
+  max-width: 23%;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+  width: 100%; /* Set the width of the image to 100% of the column */
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover; /* Add this line to maintain the aspect ratio while scaling */
 }
+
