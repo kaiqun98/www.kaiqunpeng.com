@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.25">
         <title>Kaiqun Peng's Space</title>
         <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript">
+          var counter = 0;
+          function countVisitor() {
+            counter++;
+          }
+        </script>
         <script>
           // Define a function to update the current time
           function updateTime() {
@@ -40,7 +46,12 @@
             <h1>Kaiqun Peng</h1>
             <h2>AE Student</h2>
           </header>
-
+      
+  
+  
+  <script type="text/javascript">
+    document.getElementById("visitorCount").innerHTML = counter;
+  </script>
           <table style="width: 100%;">
             <tr>
               
@@ -204,7 +215,7 @@
           <section>
             <p>The current time is: <span id="current-time"></span></p>
           </section>
-          
+          <p style="font-size: 12px;">You are visitor number <span id="visitorCount"></span></p>
           <footer>
             <p style="font-size: 12px;">Copyright © 2023 Kaiqun Peng </p>
             <p style="font-size: 12px;">
