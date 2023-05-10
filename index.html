@@ -5,12 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.25">
         <title>Kaiqun Peng's Space</title>
         <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript">
-          var counter = 0;
-          function countVisitor() {
-            counter++;
-          }
-        </script>
+        <script src="T2.js"></script>
         <script>
           // Define a function to update the current time
           function updateTime() {
@@ -46,12 +41,7 @@
             <h1>Kaiqun Peng</h1>
             <h2>AE Student</h2>
           </header>
-      
-  
-  
-  <script type="text/javascript">
-    document.getElementById("visitorCount").innerHTML = counter;
-  </script>
+
           <table style="width: 100%;">
             <tr>
               
@@ -101,25 +91,7 @@
                     My current research interests are in interface tracking methods<br> for two-phase flows
                     and detonation wave simulation.</p>
                 <div class="image-container">
-
-
-
-
-		  <div class="container_dis">
-		    <img src="./My_photo.jpg" alt="Avatar" class="image_self">
-		    <div class="overlay">
-		      <div class="text">Hello I'm Kai </div>
-		    </div>
-		  </div>
-                 
-
-
-
-
-
-
-
-		  
+                  <img src="./My_photo.jpg" alt="An example image">
                 </div>
               </div>
           </section>
@@ -138,8 +110,8 @@
             <h3>Contact Me</h3>
             <ul>
                 <li>Phone Number 470-662-4677 (US)</li>
-                <li><a href="https://www.linkedin.com/in/kaiqun-peng-ae-doc">My Linkedin</a></li>
-                <li><a href="./Kaiqun_Peng_Resume.pdf" target="_blank">Resume (Old Need to renew)</a></li>
+                <li>kaiqun98@gatech.edu (School)</li>
+                <li>kaiqun2023@gmail.com (Leisure)</li>
             </ul>
           </section>
 
@@ -215,27 +187,23 @@
           <section>
             <p>The current time is: <span id="current-time"></span></p>
           </section>
-          <p>Visitor count: <span id="visitorCount"></span></p>
-  
-  <script>
-    function getVisitorCount() {
-      // Check if 'visitorCount' exists in localStorage
-      if (localStorage.getItem('visitorCount') === null) {
-        // If it doesn't exist, set the initial count to 1
-        localStorage.setItem('visitorCount', '1');
-      } else {
-        // If it exists, increment the count by 1
-        let currentCount = parseInt(localStorage.getItem('visitorCount'));
-        localStorage.setItem('visitorCount', (currentCount + 1).toString());
-      }
-      
-      // Display the visitor count on the page
-      document.getElementById('visitorCount').innerText = localStorage.getItem('visitorCount');
-    }
 
-    // Call the function to update and display the visitor count
-    getVisitorCount();
-  </script>
+          <div class="bottom-bar" data-bottombar="cookieMessage">
+            <div class="bottom-bar__content">
+          <div class="bottom-bar__text">
+            Here are my social media accounts. 
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kaiqun.peng.9/"><img src="Facebook_icon.png" alt="Facebook"></a>
+                    <a href="Ins_link.png" target="_blank"><img src="Ins_icon.png" alt="Twitter"></a>
+                    <a href="Wechat_QR.png" target="_blank"><img src="Wechat_icon.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/kaiqun-peng-ae-doc"><img src="Linkedin_icon.png" alt="LinkedIn"></a>
+                  </div>
+            
+          </div>
+          <button class="bottom-bar__close" type="button" data-bottombar-close="cookieMessage">&times;</button>
+        </div>
+        </div>    
+
           <footer>
             <p style="font-size: 12px;">Copyright © 2023 Kaiqun Peng </p>
             <p style="font-size: 12px;">
