@@ -3,7 +3,6 @@
 body {
     background-image: url("./pic.png");
     background-size: repeat;
-    zoom:125%
 }
 
 body::before {
@@ -20,18 +19,31 @@ header {
     text-align: center;
 }
 
+header hhh{
+    background-color: #003057;
+    padding: 20px;
+    text-align: center;
+}
+
 header h1 {
     margin: 0;
 }
 
 header h2 {
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 0px;
     font-weight: normal;
 }
 
 h3 {
     margin: 0;
     padding: 0;
+  }
+
+h4 {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 20px;
   }
   
 h7 {
@@ -46,6 +58,7 @@ h7 {
   }
 
 .container {
+    margin-top: 10px;
     max-width: auto; /* Adjust the maximum width as needed */
     padding: 20px; /* Add some padding to the container */
     display: flex; /* Use Flexbox layout */
@@ -58,6 +71,22 @@ h7 {
     margin-left: 100px; /* Add some margin to the left of the image container */
     
   }
+
+.container2 {
+    margin-top: 10px;
+    max-width: auto; /* Adjust the maximum width as needed */
+    padding: 20px; /* Add some padding to the container */
+    display: flex; /* Use Flexbox layout */
+    flex-direction: row; /* Set the direction of the flex items to horizontal */
+    align-items: center; /* Vertically center the flex items */
+  }
+
+.image-container2 {
+    float: right; /* Float the image container to the right */
+    margin-left: 100px; /* Add some margin to the left of the image container */
+    
+  }
+
 
 p {
     font-size: 16px;
@@ -85,45 +114,81 @@ a:active {
     color: #006600;
 }
 
+a:hover {
+    color: #993366;
+  }
 
-/* Container needed to position the overlay. Adjust the width as needed */
-.container_dis {
-  position: relative;
-  width: 50%;
-}
+  .no-style_head {
+    text-decoration: none;
+  }
 
-/* Make the image to responsive */
-.image_self {
-  width: 200%;
-  height: auto;
-}
+  .no-style_head:link {
+    color: white;
+  }
 
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 200%;
-  height: 100%;
-  transform: scale(0);
-  transition: .3s ease;
-}
+  .no-style_head:visited {
+    color: white;
+  }
 
-/* When you mouse over the container, the overlay text will "zoom" in display */
-.container:hover .overlay {
-  transform: scale(1);
-}
+  .no-style_head:hover {
+    color: #993366;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+  }
+  
+  .social-icons img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+  }
+  
+  .social-icons a:hover img {
+    opacity: 0.7;
+  }
 
-/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
-.text {
-  color: white;
-  font-size: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .bottom-bar {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(144, 238, 144, 0.5); /* sets the background color to light green with a transparency of 50% */
+    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+  }
+  
+  .bottom-bar__content {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .bottom-bar__content > * {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bottom-bar__text {
+    padding-right: 10px;
+  }
+  
+  .bottom-bar__close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2em;
+    margin-left: 50px;
+  }
+  
+  
