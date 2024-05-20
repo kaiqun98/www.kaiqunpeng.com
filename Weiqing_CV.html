@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Revision Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .benefits, .contact {
+            margin: 2rem 0;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .contact form button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #45a049;
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+        }
+        .intro img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("KnMtEYYN9-PM7zMig"); // Your EmailJS public key
+        })();
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Professional CV Revision Service</h1>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <img src="Weiqing_Photo.jpg" alt="Weiqing Photo">
+        <div>
+            <h2>About Me</h2>
+            <p>Welcome to our CV revision service! My name is Weiqing, balabala .... I offer professional CV editing and revision to help you stand out in your job applications. Our experts have years of experience in crafting high-quality CVs that get noticed by employers.</p>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Experienced professionals with Finance background</li>
+            <li>Personalized feedback and revisions</li>
+            <li>Quick turnaround time</li>
+            <li>Affordable pricing</li>
+            <li>I speak Chinese/English</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="from_name">Name:</label>
+            <input type="text" id="from_name" name="from_name" required>
+            
+            <label for="from_email">Email:</label>
+            <input type="email" id="from_email" name="from_email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p id="status"></p>
+    </section>
+</div>
+
+<script type="text/javascript">
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_5fehvib', 'template_fptquvb', this)
+            .then(function(response) {
+                document.getElementById('status').innerText = 'Success! I will email back soon';
+            }, function(error) {
+                document.getElementById('status').innerText = 'Failed to send message. Please try again.';
+                console.error('EmailJS error:', error);
+            });
+    });
+</script>
+
+</body>
+</html>
