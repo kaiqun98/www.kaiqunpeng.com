@@ -57,7 +57,7 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
-            emailjs.init("KnMtEYYN9-PM7zMig"); // Your EmailJS public key
+            emailjs.init("H8JwKUYNlC3VgShx9"); // Your EmailJS public key
         })();
     </script>
 </head>
@@ -109,7 +109,7 @@
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
 
-        emailjs.sendForm('service_5fehvib', 'template_fptquvb', this)
+        emailjs.sendForm('service_m54nppb', 'template_i5jcz88', this)
             .then(function(response) {
                 document.getElementById('status').innerText = 'Success! I will email back soon';
             }, function(error) {
