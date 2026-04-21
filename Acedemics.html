@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics | Kaiqun Peng</title>
-    <meta name="description" content="Academic background, research interests, and resources from Kaiqun Peng.">
+    <title>Research | Kaiqun Peng</title>
+    <meta name="description" content="Research interests, academic background, and selected resources from Kaiqun Peng.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-    <div class="nav-shell">
+    <div class="site-header__inner">
         <a class="brand" href="index.html">
             <span class="brand-mark">KP</span>
             <span class="brand-copy">
                 <strong>Kaiqun Peng</strong>
-                <span>Research, notes, and life outside the lab</span>
+                <span>Aerospace engineering, simulation, and notes</span>
             </span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -25,125 +25,200 @@
         </button>
         <nav class="site-nav" id="site-nav">
             <a href="index.html">Home</a>
-            <a href="Acedemics.html" aria-current="page">Academics</a>
+            <a href="Acedemics.html" aria-current="page">Research</a>
             <a href="Articles.html">Notes</a>
             <a href="Personal.html">Gallery</a>
-            <a href="Games.html">Games</a>
+            <a href="Games.html">Elsewhere</a>
             <a href="Acedemics_zh.html">中文</a>
-            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">Resume</a>
+            <a class="nav-cta" href="Weiqing_CV.html">Resume</a>
         </nav>
     </div>
 </header>
 
-<main class="page-shell">
-    <section class="panel page-intro">
-        <span class="eyebrow">Academics</span>
-        <h1>Research direction, background, and useful links.</h1>
-        <p>My research interests, academic background, and a few frequently used documents are collected here.</p>
-    </section>
-
-    <section class="panel">
-        <div class="section-head">
-            <div>
-                <span class="section-kicker">Research interests</span>
-                <h2>Computational problems with sharp interfaces and strong dynamics.</h2>
+<main class="site-main">
+    <section class="section" data-reveal>
+        <div class="page-intro">
+            <div class="page-intro__copy">
+                <span class="eyebrow">Research</span>
+                <h1>Research interests and academic background.</h1>
+                <p>My work is centered on simulation problems where interfaces, waves, and strong gradients are hard to treat well but worth getting right.</p>
             </div>
-            <p>The academic throughline here centers on fluid simulation with numerically demanding moving fronts and reactive flow behavior.</p>
-        </div>
-        <div class="card-grid">
-            <article class="card">
-                <h3>Fluid and combustion</h3>
-                <p>High-speed and reactive flow problems where physical interpretation and computational treatment both matter.</p>
-            </article>
-            <article class="card">
-                <h3>Computational science</h3>
-                <p>Methods and numerical tools that support reliable, scalable simulation in complicated engineering settings.</p>
-            </article>
-            <article class="card">
-                <h3>CFD-focused modeling</h3>
-                <p>Practical interest in computational fluid dynamics as both a research tool and a way of thinking through hard systems.</p>
-            </article>
+            <aside class="page-intro__side">
+                <span class="label">Current frame</span>
+                <p>Georgia Tech Aerospace Engineering Ph.D. student with continuing CSE study.</p>
+                <ul>
+                    <li>Interface-capturing methods</li>
+                    <li>Two-phase and compressible flow</li>
+                    <li>Reactive and detonation-related simulation</li>
+                </ul>
+            </aside>
         </div>
     </section>
 
-    <section class="panel">
+    <section class="section" data-reveal>
         <div class="section-head">
             <div>
-                <span class="section-kicker">Education</span>
-                <h2>An academic path built across Virginia Tech and Georgia Tech.</h2>
+                <span class="eyebrow">Current Topics</span>
+                <h2 class="section-title">Three recurring directions.</h2>
             </div>
-            <p>The education path moves through both aerospace engineering and computational science, with Georgia Tech at the center of the graduate work.</p>
+            <p>The details move around, but these three topics keep showing up as the main thread.</p>
+        </div>
+        <div class="tab-bar" data-tabs="research">
+            <button class="tab-button is-active" type="button" data-tab-target="interface" aria-selected="true">Interface capturing</button>
+            <button class="tab-button" type="button" data-tab-target="two-phase" aria-selected="false">Two-phase flow</button>
+            <button class="tab-button" type="button" data-tab-target="detonation" aria-selected="false">Detonation</button>
+        </div>
+
+        <div class="tab-panel" data-tab-panel="research" data-panel-id="interface">
+            <div class="panel-grid">
+                <article class="panel-card">
+                    <span class="feature-card__label">Topic</span>
+                    <h3 id="interface-tracking">Interface capturing</h3>
+                    <p>One of the questions I keep returning to is how a moving interface should be represented when the system is complex, unsteady, and numerically unforgiving.</p>
+                </article>
+                <article class="panel-card">
+                    <span class="feature-card__label">Focus</span>
+                    <h3>Sharpness and stability at the same time</h3>
+                    <p>It is not enough for an interface to remain visible. The method also needs to behave well when the rest of the flow field becomes difficult.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-tab-panel="research" data-panel-id="two-phase" hidden>
+            <div class="panel-grid">
+                <article class="panel-card">
+                    <span class="feature-card__label">Topic</span>
+                    <h3 id="two-phase-flow">Two-phase flow</h3>
+                    <p>I am especially interested in problems where the interface is doing real physical work instead of just acting like a boundary line to be tracked.</p>
+                </article>
+                <article class="panel-card">
+                    <span class="feature-card__label">Focus</span>
+                    <h3>Interface behavior drives the whole system</h3>
+                    <p>When the phase interaction matters to the larger dynamics, the numerical method becomes part of the physics conversation.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-tab-panel="research" data-panel-id="detonation" hidden>
+            <div class="panel-grid">
+                <article class="panel-card">
+                    <span class="feature-card__label">Topic</span>
+                    <h3 id="detonation-modeling">Detonation modeling</h3>
+                    <p>Reactive compressible flow, shocks, and unstable structures are part of what makes this corner of simulation both demanding and interesting.</p>
+                </article>
+                <article class="panel-card">
+                    <span class="feature-card__label">Focus</span>
+                    <h3>Strong gradients are the whole point</h3>
+                    <p>These are exactly the cases where both post-processing and numerical treatment need to stay honest.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" data-reveal>
+        <div class="section-head">
+            <div>
+                <span class="eyebrow">Real Sources</span>
+                <h2 class="section-title">A few real motion studies.</h2>
+            </div>
+            <p>I keep a few real clips here because they fit this page better than another made-up animation.</p>
+        </div>
+        <div class="motion-grid">
+            <article class="motion-card">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="https://svs.gsfc.nasa.gov/vis/a010000/a010600/a010685/lcross_plume_model_appletv.webmhd.webm" type="video/webm">
+                </video>
+                <div class="motion-card__body">
+                    <span class="motion-card__meta">Plume / NASA SVS</span>
+                    <h3>LCROSS plume model</h3>
+                    <p>A short NASA plume-model clip.</p>
+                    <a class="feature-card__link" href="https://svs.gsfc.nasa.gov/10685" target="_blank" rel="noreferrer">Open source</a>
+                </div>
+            </article>
+            <article class="motion-card">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="https://upload.wikimedia.org/wikipedia/commons/6/6f/A_classic_example_of_a_von_K%C3%A1rm%C3%A1n_vortex_street_from_Socorro_Island_off_the_coast_of_Mexico_%28CIRA_2018-04-05%29.webm" type="video/webm">
+                </video>
+                <div class="motion-card__body">
+                    <span class="motion-card__meta">Flow / NOAA-CIRA</span>
+                    <h3>Von Karman vortex street</h3>
+                    <p>Not CFD post-processing, but still a real flow structure.</p>
+                    <a class="feature-card__link" href="https://commons.wikimedia.org/wiki/File:A_classic_example_of_a_von_K%C3%A1rm%C3%A1n_vortex_street_from_Socorro_Island_off_the_coast_of_Mexico_(CIRA_2018-04-05).webm" target="_blank" rel="noreferrer">Open source</a>
+                </div>
+            </article>
+            <article class="motion-card">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014892/14892_CMEstrikesEarth_1080.webm" type="video/webm">
+                </video>
+                <div class="motion-card__body">
+                    <span class="motion-card__meta">Particles / NASA SVS</span>
+                    <h3>Particle field study</h3>
+                    <p>A particle-flow clip from NASA’s visualization studio.</p>
+                    <a class="feature-card__link" href="https://svs.gsfc.nasa.gov/14892" target="_blank" rel="noreferrer">Open source</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" data-reveal>
+        <div class="section-head">
+            <div>
+                <span class="eyebrow">Academic Path</span>
+                <h2 class="section-title">Virginia Tech and Georgia Tech.</h2>
+            </div>
+            <p>The academic path moves through both aerospace engineering and computational science, with Georgia Tech at the center of the graduate work.</p>
         </div>
         <div class="timeline">
-            <article class="timeline-item">
-                <div class="timeline-item__number">B.S.</div>
-                <h3>Undergraduate study</h3>
-                <ul>
-                    <li>Virginia Tech Aerospace Engineering, 2016-2018</li>
-                    <li>Georgia Tech Aerospace Engineering, 2018-2021</li>
-                </ul>
+            <article class="timeline-card">
+                <span class="timeline-card__year">2016-2018</span>
+                <h3>Virginia Tech Aerospace Engineering</h3>
+                <p>Early undergraduate study before transferring to Georgia Tech.</p>
             </article>
-            <article class="timeline-item">
-                <div class="timeline-item__number">M.S.</div>
-                <h3>Graduate study</h3>
-                <ul>
-                    <li>Georgia Tech Aerospace Engineering, 2021-2022</li>
-                    <li>Georgia Tech Computational Science and Engineering, 2023-</li>
-                </ul>
+            <article class="timeline-card">
+                <span class="timeline-card__year">2018-2021</span>
+                <h3>Georgia Tech Aerospace Engineering</h3>
+                <p>Finished the undergraduate degree and stayed on for graduate work.</p>
             </article>
-            <article class="timeline-item">
-                <div class="timeline-item__number">Ph.D.</div>
-                <h3>Doctoral work</h3>
-                <ul>
-                    <li>Georgia Tech Aerospace Engineering, 2022-</li>
-                </ul>
-                <p>My doctoral work continues along the same general direction: simulation, high-speed flow, and interface-related problems.</p>
+            <article class="timeline-card">
+                <span class="timeline-card__year">2021-2022</span>
+                <h3>Georgia Tech M.S.</h3>
+                <p>Graduate study in aerospace engineering, building further toward simulation work.</p>
             </article>
-            <article class="timeline-item">
-                <div class="timeline-item__number">Links</div>
-                <h3>Departments and programs</h3>
-                <ul>
-                    <li><a href="https://ae.gatech.edu/" target="_blank">Georgia Tech Aerospace Engineering</a></li>
-                    <li><a href="https://www.aoe.vt.edu/" target="_blank">Virginia Tech Aerospace and Ocean Engineering</a></li>
-                </ul>
+            <article class="timeline-card">
+                <span class="timeline-card__year">2022-now</span>
+                <h3>Georgia Tech Ph.D. and CSE study</h3>
+                <p>Doctoral work in AE with computational science and engineering coursework continuing alongside it.</p>
             </article>
         </div>
     </section>
 
-    <section class="panel">
+    <section class="section" data-reveal>
         <div class="section-head">
             <div>
-                <span class="section-kicker">Resources</span>
-                <h2>Direct access to the documents people usually want first.</h2>
+                <span class="eyebrow">Resources</span>
+                <h2 class="section-title">The usual first links.</h2>
             </div>
-            <p>Quick access to the files and links people usually want first.</p>
+            <p>The shortest version is the resume, the notes bundle, and the department links below.</p>
         </div>
         <div class="resource-grid">
             <article class="resource-card">
-                <span class="status-pill">PDF</span>
+                <span class="resource-card__label">PDF</span>
                 <h3>Resume</h3>
-                <p>Open the current resume directly in a new tab.</p>
-                <div class="button-row">
-                    <a class="button" href="Kaiqun_Peng_Resume.pdf" target="_blank">Open resume</a>
-                </div>
+                <p>The quickest summary of background, education, and contact information.</p>
+                <a class="resource-card__link" href="Weiqing_CV.html">Open resume page</a>
             </article>
             <article class="resource-card">
-                <span class="status-pill status-gold">Archive</span>
+                <span class="resource-card__label">Archive</span>
                 <h3>Notes bundle</h3>
-                <p>A downloadable archive for notes and study material collected alongside coursework and exam prep.</p>
-                <div class="button-row">
-                    <a class="button button-secondary" href="Notes.zip">Download notes</a>
-                </div>
+                <p>A direct download for study material and the current notes archive.</p>
+                <a class="resource-card__link" href="Notes.zip">Download notes</a>
             </article>
             <article class="resource-card">
-                <span class="status-pill">Focus</span>
-                <h3>Qual preparation</h3>
-                <p>I will keep adding more organized material here, especially for qualifying exam preparation and technical study notes.</p>
+                <span class="resource-card__label">Departments</span>
+                <h3>Program links</h3>
+                <p>Department pages for Georgia Tech Aerospace Engineering and Virginia Tech AOE.</p>
+                <a class="resource-card__link" href="https://ae.gatech.edu/" target="_blank" rel="noreferrer">Open Georgia Tech AE</a>
             </article>
-        </div>
-        <div class="note-banner">
-            <strong>Good starting points:</strong>
-            <span>If you want the quickest overview, start with the resume PDF and the notes bundle, then come back to the department links for program context.</span>
         </div>
     </section>
 </main>
@@ -152,13 +227,13 @@
     <div class="site-footer__inner">
         <div>
             <strong>Kaiqun Peng</strong>
-            <p>Research background, program history, and useful files in one place.</p>
+            <p>Research interests, academic path, and a few useful entry points collected in one place.</p>
         </div>
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="Articles.html">Notes</a>
+            <a href="Weiqing_CV.html">Resume</a>
             <a href="Acedemics_zh.html">中文</a>
-            <a href="Kaiqun_Peng_Resume.pdf" target="_blank">Resume</a>
         </div>
     </div>
 </footer>

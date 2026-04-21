@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes | Kaiqun Peng</title>
-    <meta name="description" content="Notes, future writing topics, and downloadable resources from Kaiqun Peng.">
+    <meta name="description" content="Notes, downloads, and reference material from Kaiqun Peng.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-    <div class="nav-shell">
+    <div class="site-header__inner">
         <a class="brand" href="index.html">
             <span class="brand-mark">KP</span>
             <span class="brand-copy">
                 <strong>Kaiqun Peng</strong>
-                <span>Research, notes, and life outside the lab</span>
+                <span>Aerospace engineering, simulation, and notes</span>
             </span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -25,74 +25,125 @@
         </button>
         <nav class="site-nav" id="site-nav">
             <a href="index.html">Home</a>
-            <a href="Acedemics.html">Academics</a>
+            <a href="Acedemics.html">Research</a>
             <a href="Articles.html" aria-current="page">Notes</a>
             <a href="Personal.html">Gallery</a>
-            <a href="Games.html">Games</a>
+            <a href="Games.html">Elsewhere</a>
             <a href="Articles_zh.html">中文</a>
-            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">Resume</a>
+            <a class="nav-cta" href="Weiqing_CV.html">Resume</a>
         </nav>
     </div>
 </header>
 
-<main class="page-shell">
-    <section class="panel page-intro">
-        <span class="eyebrow">Notes and writing</span>
-        <h1>A cleaner home for resources, drafts, and things still forming.</h1>
-        <p>I keep downloads, study material, and unfinished note ideas here.</p>
+<main class="site-main">
+    <section class="section" data-reveal>
+        <div class="page-intro">
+            <div class="page-intro__copy">
+                <span class="eyebrow">Notes</span>
+                <h1>Notes, downloads, and things I keep coming back to.</h1>
+                <p>I keep downloads, study notes, and unfinished writeups here.</p>
+            </div>
+            <aside class="page-intro__side">
+                <span class="label">Quick start</span>
+                <p>If you just need the files, start with the notes bundle and the resume.</p>
+                <div class="button-row">
+                    <a class="button button--secondary" href="Notes.zip">Download notes</a>
+                    <a class="button button--ghost" href="Weiqing_CV.html">Resume</a>
+                </div>
+            </aside>
+        </div>
     </section>
 
-    <section class="panel">
-        <div class="link-grid">
-            <article class="note-card">
-                <span class="status-pill">Download</span>
-                <h3>Notes archive</h3>
-                <p>The easiest place to start if you are looking for collected material rather than polished prose.</p>
-                <div class="button-row">
-                    <a class="button" href="Notes.zip">Download zip</a>
-                </div>
+    <section class="section" data-reveal>
+        <div class="resource-grid">
+            <article class="resource-card">
+                <span class="resource-card__label">Archive</span>
+                <h3>Notes bundle</h3>
+                <p>A direct download for the current collection of notes and study material.</p>
+                <a class="resource-card__link" href="Notes.zip">Download zip</a>
             </article>
-            <article class="note-card">
-                <span class="status-pill status-gold">Reference</span>
-                <h3>Resume snapshot</h3>
-                <p>A direct link to the current resume for quick context or background.</p>
-                <div class="button-row">
-                    <a class="button button-secondary" href="Kaiqun_Peng_Resume.pdf" target="_blank">Open PDF</a>
-                </div>
+            <article class="resource-card">
+                <span class="resource-card__label">Reference</span>
+                <h3>Resume</h3>
+                <p>The quickest way to get the short version of background, program history, and contact details.</p>
+                <a class="resource-card__link" href="Weiqing_CV.html">Open resume page</a>
             </article>
-            <article class="note-card">
-                <span class="status-pill">In progress</span>
-                <h3>Writing still to come</h3>
-                <p>I plan to turn this into a larger collection of notes, short explanations, and research-adjacent writing.</p>
+            <article class="resource-card">
+                <span class="resource-card__label">Link</span>
+                <h3>Georgia Tech AE</h3>
+                <p>The department page stays in reach because it is often the most useful context link.</p>
+                <a class="resource-card__link" href="https://ae.gatech.edu/" target="_blank" rel="noreferrer">Open site</a>
             </article>
         </div>
     </section>
 
-    <section class="panel">
+    <section class="section" data-reveal>
         <div class="section-head">
             <div>
-                <span class="section-kicker">Likely topics</span>
-                <h2>What belongs here next.</h2>
+                <span class="eyebrow">Working List</span>
+                <h2 class="section-title">What I keep here.</h2>
             </div>
-            <p>These are the topics I would most likely organize and write down over time.</p>
+            <p>The notes section is still growing, but the direction is already clear enough to organize.</p>
         </div>
-        <div class="interest-grid">
-            <article class="interest-card">
-                <h3>Interface tracking notes</h3>
-                <p>Short explanations or reading notes about methods for moving interfaces and multiphase flow problems.</p>
+        <div class="accordion" data-accordion>
+            <article class="accordion-item">
+                <button class="accordion-trigger" type="button" aria-expanded="true">
+                    <span>Qual prep and study notes</span>
+                    <small>Open</small>
+                </button>
+                <div class="accordion-panel">
+                    <p>Qual prep and course notes that I still go back to will stay here.</p>
+                    <p>For now they are in the bundle, and I will sort them out more clearly later.</p>
+                </div>
             </article>
-            <article class="interest-card">
-                <h3>Simulation workflow snippets</h3>
-                <p>Small practical notes about modeling, code organization, or computational workflows that are actually useful to revisit.</p>
+            <article class="accordion-item">
+                <button class="accordion-trigger" type="button" aria-expanded="false">
+                    <span>Interface and multiphase reading</span>
+                    <small>Closed</small>
+                </button>
+                <div class="accordion-panel" hidden>
+                    <p>I also want short reading notes, method comparisons, and details that are easy to forget.</p>
+                </div>
             </article>
-            <article class="interest-card">
-                <h3>Study resources</h3>
-                <p>Material that helps bridge the space between courses, qualifying exam prep, and hands-on numerical work.</p>
+            <article class="accordion-item">
+                <button class="accordion-trigger" type="button" aria-expanded="false">
+                    <span>Workflow snippets</span>
+                    <small>Closed</small>
+                </button>
+                <div class="accordion-panel" hidden>
+                    <p>This is also the right place for compact workflow notes: post-processing steps, plotting ideas, and small pieces of simulation setup that are worth keeping around.</p>
+                </div>
             </article>
         </div>
-        <div class="note-banner">
-            <strong>Still evolving:</strong>
-            <span>I expect this section to fill out gradually as I organize more notes and reading material.</span>
+    </section>
+
+    <section class="section" data-reveal>
+        <div class="section-head">
+            <div>
+                <span class="eyebrow">Reference Trail</span>
+                <h2 class="section-title">A few links that sit nearby.</h2>
+            </div>
+            <p>Not every useful reference belongs on the research page. Some belong here because they are part of the working notebook mindset.</p>
+        </div>
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-card__label">Software</span>
+                <h3>ParaView</h3>
+                <p>ParaView is still one of the main visual references I use for post-processing.</p>
+                <a class="feature-card__link" href="https://www.paraview.org/" target="_blank" rel="noreferrer">Open ParaView</a>
+            </article>
+            <article class="feature-card">
+                <span class="feature-card__label">Department</span>
+                <h3>Virginia Tech AOE</h3>
+                <p>Part of the academic path and still a useful anchor point for the earlier part of the story.</p>
+                <a class="feature-card__link" href="https://www.aoe.vt.edu/" target="_blank" rel="noreferrer">Open site</a>
+            </article>
+            <article class="feature-card">
+                <span class="feature-card__label">Contact</span>
+                <h3>School email</h3>
+                <p>When something on the site needs a short answer instead of a page, email is still the cleanest option.</p>
+                <a class="feature-card__link" href="mailto:kaiqun98@gatech.edu">Send email</a>
+            </article>
         </div>
     </section>
 </main>
@@ -101,11 +152,11 @@
     <div class="site-footer__inner">
         <div>
             <strong>Kaiqun Peng</strong>
-            <p>Notes, downloads, and future writing directions collected in one place.</p>
+            <p>Downloads, study material, and notes I will keep adding to.</p>
         </div>
         <div class="footer-links">
-            <a href="Acedemics.html">Academics</a>
-            <a href="Personal.html">Gallery</a>
+            <a href="index.html">Home</a>
+            <a href="Acedemics.html">Research</a>
             <a href="Articles_zh.html">中文</a>
             <a href="Notes.zip">Download notes</a>
         </div>

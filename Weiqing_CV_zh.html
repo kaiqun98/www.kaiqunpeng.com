@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>简历 | 彭凯群</title>
-    <meta name="description" content="彭凯群简历页面，可直接预览或下载 PDF。">
+    <meta name="description" content="彭凯群简历页面，包含 PDF 预览与直接下载入口。">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-    <div class="nav-shell">
+    <div class="site-header__inner">
         <a class="brand" href="index_zh.html">
             <span class="brand-mark">KP</span>
             <span class="brand-copy">
                 <strong>彭凯群</strong>
-                <span>研究、笔记与生活片段</span>
+                <span>航空航天、模拟与笔记</span>
             </span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -28,27 +28,42 @@
             <a href="Acedemics_zh.html">学术</a>
             <a href="Articles_zh.html">笔记</a>
             <a href="Personal_zh.html">相册</a>
-            <a href="Games_zh.html">兴趣</a>
+            <a href="Games_zh.html">其他</a>
             <a href="Weiqing_CV.html">EN</a>
-            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">简历</a>
+            <a class="nav-cta" href="Weiqing_CV_zh.html" aria-current="page">简历</a>
         </nav>
     </div>
 </header>
 
-<main class="page-shell">
-    <section class="panel page-intro">
-        <span class="eyebrow">简历</span>
-        <h1>简历。</h1>
-        <p>可以直接在这里打开 PDF。</p>
-        <div class="button-row">
-            <a class="button" href="Kaiqun_Peng_Resume.pdf" target="_blank">新标签页打开</a>
-            <a class="button button-secondary" href="Kaiqun_Peng_Resume.pdf">下载 PDF</a>
-        </div>
-    </section>
-
-    <section class="panel">
-        <div class="embed-shell">
-            <embed src="Kaiqun_Peng_Resume.pdf" type="application/pdf">
+<main class="site-main">
+    <section class="section" data-reveal>
+        <div class="resume-layout">
+            <div class="resume-card">
+                <span class="eyebrow">简历</span>
+                <h3>PDF 直接在下面看。</h3>
+                <p>如果浏览器支持，下面会直接嵌入 PDF。右侧不方便看时，也可以直接打开或下载。</p>
+                <div class="button-row">
+                    <a class="button" href="Kaiqun_Peng_Resume.pdf" target="_blank">打开 PDF</a>
+                    <a class="button button--secondary" href="Kaiqun_Peng_Resume.pdf">下载</a>
+                </div>
+                <div class="resume-quick">
+                    <article class="note-card">
+                        <span class="note-card__label">邮箱</span>
+                        <h3>kaiqun98@gatech.edu</h3>
+                    </article>
+                    <article class="note-card">
+                        <span class="note-card__label">LinkedIn</span>
+                        <h3>kaiqun-peng-ae-doc</h3>
+                    </article>
+                    <article class="note-card">
+                        <span class="note-card__label">当前</span>
+                        <h3>Georgia Tech</h3>
+                    </article>
+                </div>
+            </div>
+            <div class="embed-shell">
+                <embed src="Kaiqun_Peng_Resume.pdf" type="application/pdf">
+            </div>
         </div>
     </section>
 </main>
@@ -57,13 +72,13 @@
     <div class="site-footer__inner">
         <div>
             <strong>彭凯群</strong>
-            <p>简历 PDF 的直接入口。</p>
+            <p>简历页面，提供 PDF 预览和直接下载入口。</p>
         </div>
         <div class="footer-links">
             <a href="index_zh.html">首页</a>
             <a href="Acedemics_zh.html">学术</a>
             <a href="Weiqing_CV.html">EN</a>
-            <a href="Kaiqun_Peng_Resume.pdf" target="_blank">简历 PDF</a>
+            <a href="Kaiqun_Peng_Resume.pdf" target="_blank">PDF</a>
         </div>
     </div>
 </footer>

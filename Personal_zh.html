@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>相册 | 彭凯群</title>
-    <meta name="description" content="彭凯群的校园和城市照片相册。">
+    <meta name="description" content="彭凯群拍摄的校园与城市照片。">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-    <div class="nav-shell">
+    <div class="site-header__inner">
         <a class="brand" href="index_zh.html">
             <span class="brand-mark">KP</span>
             <span class="brand-copy">
                 <strong>彭凯群</strong>
-                <span>研究、笔记与生活片段</span>
+                <span>航空航天、模拟与笔记</span>
             </span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -28,100 +28,97 @@
             <a href="Acedemics_zh.html">学术</a>
             <a href="Articles_zh.html">笔记</a>
             <a href="Personal_zh.html" aria-current="page">相册</a>
-            <a href="Games_zh.html">兴趣</a>
+            <a href="Games_zh.html">其他</a>
             <a href="Personal.html">EN</a>
-            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">简历</a>
+            <a class="nav-cta" href="Weiqing_CV_zh.html">简历</a>
         </nav>
     </div>
 </header>
 
-<main class="page-shell">
-    <section class="panel page-intro">
-        <span class="eyebrow">相册</span>
-        <h1>从公式、网格和求解器里稍微走出来一下。</h1>
-        <p>这里放一些我拍的校园和城市照片。</p>
-    </section>
-
-    <section class="panel">
-        <div class="section-head">
-            <div>
-                <span class="section-kicker">Georgia Tech 片段</span>
-                <h2>校园与城市周边的画面。</h2>
+<main class="site-main">
+    <section class="section" data-reveal>
+        <div class="page-intro">
+            <div class="page-intro__copy">
+                <span class="eyebrow">相册</span>
+                <h1>校园和城市里的画面。</h1>
+                <p>这里放一些 Georgia Tech 和 Atlanta 的照片。点开任何一张，都可以在站内直接放大看。</p>
             </div>
-            <p>从已有照片里挑出一组更适合放在个人主页上的图像。</p>
-        </div>
-        <div class="gallery-grid">
-            <a class="gallery-card" href="GT_Pic/P1.jpg" target="_blank">
-                <img src="GT_Pic/P1.jpg" alt="Georgia Tech 照片 1">
-                <h3>校园光线</h3>
-                <p>我自己挺喜欢的一张。</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P2.jpg" target="_blank">
-                <img src="GT_Pic/P2.jpg" alt="Georgia Tech 照片 2">
-                <h3>城市细节</h3>
-                <p>带一点城市里的日常感觉。</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P3.jpg" target="_blank">
-                <img src="GT_Pic/P3.jpg" alt="Georgia Tech 照片 3">
-                <h3>开阔视角</h3>
-                <p>比较安静的一张校园画面。</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P5.jpg" target="_blank">
-                <img src="GT_Pic/P5.jpg" alt="Georgia Tech 照片 5">
-                <h3>午后颜色</h3>
-                <p>季节感和色彩都比较鲜明。</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P8.jpg" target="_blank">
-                <img src="GT_Pic/P8.jpg" alt="Georgia Tech 照片 8">
-                <h3>向上看</h3>
-                <p>我很喜欢这种向上看的角度。</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P10.jpg" target="_blank">
-                <img src="GT_Pic/P10.jpg" alt="Georgia Tech 照片 10">
-                <h3>校园节奏</h3>
-                <p>也是我想留下来的一张校园照片。</p>
-            </a>
+            <aside class="page-intro__side">
+                <span class="label">为什么保留这页</span>
+                <p>平时看多了模拟和后处理图，放一页照片也挺好。</p>
+            </aside>
         </div>
     </section>
 
-    <section class="panel">
+    <section class="section" data-reveal>
+        <div class="photo-grid">
+            <a class="photo-card photo-card--wide" href="GT_Pic/P1.jpg" data-lightbox data-caption="Georgia Tech 一带看到的亚特兰大天际线。">
+                <img src="GT_Pic/P1.jpg" alt="Georgia Tech 一带看到的亚特兰大天际线">
+                <div class="photo-card__meta">
+                    <h3>Atlanta skyline</h3>
+                    <p>比较宽的一张城市视角。</p>
+                </div>
+            </a>
+            <a class="photo-card photo-card--tall" href="Campus/P1-min.jpg" data-lightbox data-caption="带着春天枝叶的一张校园画面。">
+                <img src="Campus/P1-min.jpg" alt="带着春天枝叶的一张校园画面">
+                <div class="photo-card__meta">
+                    <h3>Spring branches</h3>
+                    <p>树枝、天空和建筑。</p>
+                </div>
+            </a>
+            <a class="photo-card photo-card--half" href="GT_Pic/P5.jpg" data-lightbox data-caption="下午光线比较亮的一张。">
+                <img src="GT_Pic/P5.jpg" alt="下午光线比较亮的一张">
+                <div class="photo-card__meta">
+                    <h3>Afternoon color</h3>
+                    <p>这一组里颜色更亮的一张。</p>
+                </div>
+            </a>
+            <a class="photo-card photo-card--half" href="Campus/P5-min.jpg" data-lightbox data-caption="比较安静的一处校园角落。">
+                <img src="Campus/P5-min.jpg" alt="比较安静的一处校园角落">
+                <div class="photo-card__meta">
+                    <h3>In-between spaces</h3>
+                    <p>更安静一点的校园画面。</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" data-reveal>
         <div class="section-head">
             <div>
-                <span class="section-kicker">Campus collection</span>
-                <h2>另一组更安静的校园画面。</h2>
+                <span class="eyebrow">继续往下看</span>
+                <h2 class="section-title">再放几张校园里的图。</h2>
             </div>
-            <p>比上面那组更偏建筑、光线和局部细节。</p>
+            <p>下面这组还是同样的感觉，更多是建筑、天空和一些留得住的瞬间。</p>
         </div>
-        <div class="gallery-grid">
-            <a class="gallery-card" href="Campus/P1-min.jpg" target="_blank">
-                <img src="Campus/P1-min.jpg" alt="Campus 照片 1">
-                <h3>春天的一角</h3>
-                <p>颜色比较柔和的一张。</p>
+        <div class="photo-grid">
+            <a class="photo-card photo-card--half" href="GT_Pic/P8.jpg" data-lightbox data-caption="一张偏向上看的校园视角。">
+                <img src="GT_Pic/P8.jpg" alt="一张偏向上看的校园视角">
+                <div class="photo-card__meta">
+                    <h3>Looking up</h3>
+                    <p>我比较喜欢的一张仰视角度。</p>
+                </div>
             </a>
-            <a class="gallery-card" href="Campus/P3-min.jpg" target="_blank">
-                <img src="Campus/P3-min.jpg" alt="Campus 照片 3">
-                <h3>建筑秩序</h3>
-                <p>结构感比较强。</p>
+            <a class="photo-card photo-card--half" href="Campus/P7-min.jpg" data-lightbox data-caption="天空和建筑线条。">
+                <img src="Campus/P7-min.jpg" alt="天空和建筑线条">
+                <div class="photo-card__meta">
+                    <h3>Sky and structure</h3>
+                    <p>干净一点的几何感。</p>
+                </div>
             </a>
-            <a class="gallery-card" href="Campus/P5-min.jpg" target="_blank">
-                <img src="Campus/P5-min.jpg" alt="Campus 照片 5">
-                <h3>过渡空间</h3>
-                <p>比较松弛的一张日常画面。</p>
+            <a class="photo-card photo-card--half" href="GT_Pic/P10.jpg" data-lightbox data-caption="Georgia Tech 文件夹里留下来的一张。">
+                <img src="GT_Pic/P10.jpg" alt="Georgia Tech 文件夹里留下来的一张">
+                <div class="photo-card__meta">
+                    <h3>Campus rhythm</h3>
+                    <p>一张我现在还挺喜欢的校园照片。</p>
+                </div>
             </a>
-            <a class="gallery-card" href="Campus/P7-min.jpg" target="_blank">
-                <img src="Campus/P7-min.jpg" alt="Campus 照片 7">
-                <h3>天空与建筑</h3>
-                <p>我比较喜欢这种更空一点的画面。</p>
-            </a>
-            <a class="gallery-card" href="Campus/P9-min.jpg" target="_blank">
-                <img src="Campus/P9-min.jpg" alt="Campus 照片 9">
-                <h3>日光细节</h3>
-                <p>颜色和反差都比较舒服。</p>
-            </a>
-            <a class="gallery-card" href="Campus/P12-min.jpg" target="_blank">
-                <img src="Campus/P12-min.jpg" alt="Campus 照片 12">
-                <h3>收尾的一张</h3>
-                <p>放在最后刚好。</p>
+            <a class="photo-card photo-card--half" href="Campus/P12-min.jpg" data-lightbox data-caption="比较安静的结尾。">
+                <img src="Campus/P12-min.jpg" alt="比较安静的结尾">
+                <div class="photo-card__meta">
+                    <h3>Quiet ending</h3>
+                    <p>放在最后的一张。</p>
+                </div>
             </a>
         </div>
     </section>
@@ -131,13 +128,13 @@
     <div class="site-footer__inner">
         <div>
             <strong>彭凯群</strong>
-            <p>留一点和研究无关、但我自己也想放上来的东西。</p>
+            <p>校园和城市照片，单独放在这里。</p>
         </div>
         <div class="footer-links">
             <a href="index_zh.html">首页</a>
             <a href="Articles_zh.html">笔记</a>
+            <a href="Games_zh.html">其他</a>
             <a href="Personal.html">EN</a>
-            <a href="Games_zh.html">兴趣</a>
         </div>
     </div>
 </footer>

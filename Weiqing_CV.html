@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Kaiqun Peng</title>
-    <meta name="description" content="Resume page for Kaiqun Peng with embedded PDF view and direct download link.">
+    <meta name="description" content="Resume page for Kaiqun Peng with embedded PDF preview and direct download links.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-    <div class="nav-shell">
+    <div class="site-header__inner">
         <a class="brand" href="index.html">
             <span class="brand-mark">KP</span>
             <span class="brand-copy">
                 <strong>Kaiqun Peng</strong>
-                <span>Research, notes, and life outside the lab</span>
+                <span>Aerospace engineering, simulation, and notes</span>
             </span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -25,30 +25,45 @@
         </button>
         <nav class="site-nav" id="site-nav">
             <a href="index.html">Home</a>
-            <a href="Acedemics.html">Academics</a>
+            <a href="Acedemics.html">Research</a>
             <a href="Articles.html">Notes</a>
             <a href="Personal.html">Gallery</a>
-            <a href="Games.html">Games</a>
+            <a href="Games.html">Elsewhere</a>
             <a href="Weiqing_CV_zh.html">中文</a>
-            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">Resume</a>
+            <a class="nav-cta" href="Weiqing_CV.html" aria-current="page">Resume</a>
         </nav>
     </div>
 </header>
 
-<main class="page-shell">
-    <section class="panel page-intro">
-        <span class="eyebrow">Resume</span>
-        <h1>Resume.</h1>
-        <p>You can open the PDF here directly.</p>
-        <div class="button-row">
-            <a class="button" href="Kaiqun_Peng_Resume.pdf" target="_blank">Open in new tab</a>
-            <a class="button button-secondary" href="Kaiqun_Peng_Resume.pdf">Download PDF</a>
-        </div>
-    </section>
-
-    <section class="panel">
-        <div class="embed-shell">
-            <embed src="Kaiqun_Peng_Resume.pdf" type="application/pdf">
+<main class="site-main">
+    <section class="section" data-reveal>
+        <div class="resume-layout">
+            <div class="resume-card">
+                <span class="eyebrow">Resume</span>
+                <h3>Quick access to the PDF.</h3>
+                <p>The embedded view is below if the browser supports it. The direct PDF links stay here either way.</p>
+                <div class="button-row">
+                    <a class="button" href="Kaiqun_Peng_Resume.pdf" target="_blank">Open PDF</a>
+                    <a class="button button--secondary" href="Kaiqun_Peng_Resume.pdf">Download</a>
+                </div>
+                <div class="resume-quick">
+                    <article class="note-card">
+                        <span class="note-card__label">Email</span>
+                        <h3>kaiqun98@gatech.edu</h3>
+                    </article>
+                    <article class="note-card">
+                        <span class="note-card__label">LinkedIn</span>
+                        <h3>kaiqun-peng-ae-doc</h3>
+                    </article>
+                    <article class="note-card">
+                        <span class="note-card__label">Current base</span>
+                        <h3>Georgia Tech</h3>
+                    </article>
+                </div>
+            </div>
+            <div class="embed-shell">
+                <embed src="Kaiqun_Peng_Resume.pdf" type="application/pdf">
+            </div>
         </div>
     </section>
 </main>
@@ -57,13 +72,13 @@
     <div class="site-footer__inner">
         <div>
             <strong>Kaiqun Peng</strong>
-            <p>Quick access to the resume PDF.</p>
+            <p>Resume page with direct PDF access and an embedded preview.</p>
         </div>
         <div class="footer-links">
             <a href="index.html">Home</a>
-            <a href="Acedemics.html">Academics</a>
+            <a href="Acedemics.html">Research</a>
             <a href="Weiqing_CV_zh.html">中文</a>
-            <a href="Kaiqun_Peng_Resume.pdf" target="_blank">Resume PDF</a>
+            <a href="Kaiqun_Peng_Resume.pdf" target="_blank">PDF</a>
         </div>
     </div>
 </footer>

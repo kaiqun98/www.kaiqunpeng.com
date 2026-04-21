@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Kaiqun Peng</title>
-    <meta name="description" content="A small photo gallery from Kaiqun Peng featuring Georgia Tech and campus images.">
+    <meta name="description" content="Campus and city photographs from Kaiqun Peng.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-    <div class="nav-shell">
+    <div class="site-header__inner">
         <a class="brand" href="index.html">
             <span class="brand-mark">KP</span>
             <span class="brand-copy">
                 <strong>Kaiqun Peng</strong>
-                <span>Research, notes, and life outside the lab</span>
+                <span>Aerospace engineering, simulation, and notes</span>
             </span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -25,103 +25,100 @@
         </button>
         <nav class="site-nav" id="site-nav">
             <a href="index.html">Home</a>
-            <a href="Acedemics.html">Academics</a>
+            <a href="Acedemics.html">Research</a>
             <a href="Articles.html">Notes</a>
             <a href="Personal.html" aria-current="page">Gallery</a>
-            <a href="Games.html">Games</a>
+            <a href="Games.html">Elsewhere</a>
             <a href="Personal_zh.html">中文</a>
-            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">Resume</a>
+            <a class="nav-cta" href="Weiqing_CV.html">Resume</a>
         </nav>
     </div>
 </header>
 
-<main class="page-shell">
-    <section class="panel page-intro">
-        <span class="eyebrow">Gallery</span>
-        <h1>A visual break from equations, grids, and solvers.</h1>
-        <p>I keep some campus and city photos here.</p>
-    </section>
-
-    <section class="panel">
-        <div class="section-head">
-            <div>
-                <span class="section-kicker">Georgia Tech moments</span>
-                <h2>Scenes collected around Atlanta and campus life.</h2>
+<main class="site-main">
+    <section class="section" data-reveal>
+        <div class="page-intro">
+            <div class="page-intro__copy">
+                <span class="eyebrow">Gallery</span>
+                <h1>Campus and city frames.</h1>
+                <p>A small set of Georgia Tech and Atlanta images. Click any frame to open it larger inside the page.</p>
             </div>
-            <p>A few favorite images pulled from the existing photo folders and arranged in a cleaner visual layout.</p>
-        </div>
-        <div class="gallery-grid">
-            <a class="gallery-card" href="GT_Pic/P1.jpg" target="_blank">
-                <img src="GT_Pic/P1.jpg" alt="Georgia Tech photo 1">
-                <h3>Light across campus</h3>
-                <p>One of the stronger frames from the Georgia Tech collection.</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P2.jpg" target="_blank">
-                <img src="GT_Pic/P2.jpg" alt="Georgia Tech photo 2">
-                <h3>City detail</h3>
-                <p>Urban textures around the Georgia Tech environment.</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P3.jpg" target="_blank">
-                <img src="GT_Pic/P3.jpg" alt="Georgia Tech photo 3">
-                <h3>Open air</h3>
-                <p>A quieter campus frame from the existing folder.</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P5.jpg" target="_blank">
-                <img src="GT_Pic/P5.jpg" alt="Georgia Tech photo 5">
-                <h3>Afternoon color</h3>
-                <p>Bright seasonal contrast and cleaner composition.</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P8.jpg" target="_blank">
-                <img src="GT_Pic/P8.jpg" alt="Georgia Tech photo 8">
-                <h3>Looking up</h3>
-                <p>One I like for the upward perspective.</p>
-            </a>
-            <a class="gallery-card" href="GT_Pic/P10.jpg" target="_blank">
-                <img src="GT_Pic/P10.jpg" alt="Georgia Tech photo 10">
-                <h3>Campus rhythm</h3>
-                <p>A campus frame I wanted to keep.</p>
-            </a>
+            <aside class="page-intro__side">
+                <span class="label">Why this page</span>
+                <p>I like having one page here that has nothing to do with equations or solver output.</p>
+            </aside>
         </div>
     </section>
 
-    <section class="panel">
+    <section class="section" data-reveal>
+        <div class="photo-grid">
+            <a class="photo-card photo-card--wide" href="GT_Pic/P1.jpg" data-lightbox data-caption="Atlanta skyline from Georgia Tech.">
+                <img src="GT_Pic/P1.jpg" alt="Atlanta skyline from Georgia Tech">
+                <div class="photo-card__meta">
+                    <h3>Atlanta skyline</h3>
+                    <p>One of the wider city views from around campus.</p>
+                </div>
+            </a>
+            <a class="photo-card photo-card--tall" href="Campus/P1-min.jpg" data-lightbox data-caption="Campus frame with spring branches.">
+                <img src="Campus/P1-min.jpg" alt="Campus frame with spring branches">
+                <div class="photo-card__meta">
+                    <h3>Spring branches</h3>
+                    <p>Campus detail and sky.</p>
+                </div>
+            </a>
+            <a class="photo-card photo-card--half" href="GT_Pic/P5.jpg" data-lightbox data-caption="Afternoon color near campus.">
+                <img src="GT_Pic/P5.jpg" alt="Afternoon color near campus">
+                <div class="photo-card__meta">
+                    <h3>Afternoon color</h3>
+                    <p>One of the brighter frames from the set.</p>
+                </div>
+            </a>
+            <a class="photo-card photo-card--half" href="Campus/P5-min.jpg" data-lightbox data-caption="A calmer in-between campus space.">
+                <img src="Campus/P5-min.jpg" alt="A calmer in-between campus space">
+                <div class="photo-card__meta">
+                    <h3>In-between spaces</h3>
+                    <p>A quieter campus view.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" data-reveal>
         <div class="section-head">
             <div>
-                <span class="section-kicker">Campus collection</span>
-                <h2>Another set of scenes kept lighter and simpler.</h2>
+                <span class="eyebrow">More Frames</span>
+                <h2 class="section-title">Another pass through campus.</h2>
             </div>
-            <p>The second gallery shifts to a quieter set of campus images and architectural details.</p>
+            <p>The second group keeps the same mood: clean lines, open sky, and a few moments that felt worth holding onto.</p>
         </div>
-        <div class="gallery-grid">
-            <a class="gallery-card" href="Campus/P1-min.jpg" target="_blank">
-                <img src="Campus/P1-min.jpg" alt="Campus photo 1">
-                <h3>Spring frame</h3>
-                <p>A softer campus detail.</p>
+        <div class="photo-grid">
+            <a class="photo-card photo-card--half" href="GT_Pic/P8.jpg" data-lightbox data-caption="Upward perspective from campus.">
+                <img src="GT_Pic/P8.jpg" alt="Upward perspective from campus">
+                <div class="photo-card__meta">
+                    <h3>Looking up</h3>
+                    <p>One of the stronger vertical perspectives.</p>
+                </div>
             </a>
-            <a class="gallery-card" href="Campus/P3-min.jpg" target="_blank">
-                <img src="Campus/P3-min.jpg" alt="Campus photo 3">
-                <h3>Quiet geometry</h3>
-                <p>Architectural rhythm through a calmer crop.</p>
+            <a class="photo-card photo-card--half" href="Campus/P7-min.jpg" data-lightbox data-caption="Sky and structure on campus.">
+                <img src="Campus/P7-min.jpg" alt="Sky and structure on campus">
+                <div class="photo-card__meta">
+                    <h3>Sky and structure</h3>
+                    <p>A simple frame with clean geometry.</p>
+                </div>
             </a>
-            <a class="gallery-card" href="Campus/P5-min.jpg" target="_blank">
-                <img src="Campus/P5-min.jpg" alt="Campus photo 5">
-                <h3>In-between spaces</h3>
-                <p>One of the more relaxed images from the set.</p>
+            <a class="photo-card photo-card--half" href="GT_Pic/P10.jpg" data-lightbox data-caption="A campus rhythm frame from the Georgia Tech folder.">
+                <img src="GT_Pic/P10.jpg" alt="Campus rhythm frame from Georgia Tech">
+                <div class="photo-card__meta">
+                    <h3>Campus rhythm</h3>
+                    <p>One campus photo I still like.</p>
+                </div>
             </a>
-            <a class="gallery-card" href="Campus/P7-min.jpg" target="_blank">
-                <img src="Campus/P7-min.jpg" alt="Campus photo 7">
-                <h3>Sky and structure</h3>
-                <p>A simple frame that still feels distinct.</p>
-            </a>
-            <a class="gallery-card" href="Campus/P9-min.jpg" target="_blank">
-                <img src="Campus/P9-min.jpg" alt="Campus photo 9">
-                <h3>Daylight detail</h3>
-                <p>Clean color and strong contrast.</p>
-            </a>
-            <a class="gallery-card" href="Campus/P12-min.jpg" target="_blank">
-                <img src="Campus/P12-min.jpg" alt="Campus photo 12">
-                <h3>End note</h3>
-                <p>A quieter one to end on.</p>
+            <a class="photo-card photo-card--half" href="Campus/P12-min.jpg" data-lightbox data-caption="A quieter closing frame from campus.">
+                <img src="Campus/P12-min.jpg" alt="A quieter closing frame from campus">
+                <div class="photo-card__meta">
+                    <h3>Quiet ending</h3>
+                    <p>A calmer frame to end on.</p>
+                </div>
             </a>
         </div>
     </section>
@@ -131,13 +128,13 @@
     <div class="site-footer__inner">
         <div>
             <strong>Kaiqun Peng</strong>
-            <p>A small collection of photos I wanted to keep here.</p>
+            <p>Campus and city frames kept alongside the research pages.</p>
         </div>
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="Articles.html">Notes</a>
+            <a href="Games.html">Elsewhere</a>
             <a href="Personal_zh.html">中文</a>
-            <a href="Games.html">Games</a>
         </div>
     </div>
 </footer>

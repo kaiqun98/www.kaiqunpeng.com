@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>学术 | 彭凯群</title>
-    <meta name="description" content="彭凯群的学术背景、研究兴趣与资源入口。">
+    <meta name="description" content="彭凯群的研究方向、学术背景与相关资源。">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-    <div class="nav-shell">
+    <div class="site-header__inner">
         <a class="brand" href="index_zh.html">
             <span class="brand-mark">KP</span>
             <span class="brand-copy">
                 <strong>彭凯群</strong>
-                <span>研究、笔记与生活片段</span>
+                <span>航空航天、模拟与笔记</span>
             </span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -28,117 +28,196 @@
             <a href="Acedemics_zh.html" aria-current="page">学术</a>
             <a href="Articles_zh.html">笔记</a>
             <a href="Personal_zh.html">相册</a>
-            <a href="Games_zh.html">兴趣</a>
+            <a href="Games_zh.html">其他</a>
             <a href="Acedemics.html">EN</a>
-            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">简历</a>
+            <a class="nav-cta" href="Weiqing_CV_zh.html">简历</a>
         </nav>
     </div>
 </header>
 
-<main class="page-shell">
-    <section class="panel page-intro">
-        <span class="eyebrow">学术</span>
-        <h1>研究方向、教育背景与资源入口。</h1>
-        <p>这里主要放我的研究兴趣、教育经历，以及平时最常用到的几个文档入口。</p>
-    </section>
-
-    <section class="panel">
-        <div class="section-head">
-            <div>
-                <span class="section-kicker">研究兴趣</span>
-                <h2>围绕界面、波与复杂流动结构的问题。</h2>
+<main class="site-main">
+    <section class="section" data-reveal>
+        <div class="page-intro">
+            <div class="page-intro__copy">
+                <span class="eyebrow">学术</span>
+                <h1>研究方向和学术背景。</h1>
+                <p>我现在主要做的是那些界面、波系和强梯度都不好处理，但又很值得认真处理的模拟问题。</p>
             </div>
-            <p>整体学术主线主要集中在界面演化、多相流以及反应流数值模拟。</p>
-        </div>
-        <div class="card-grid">
-            <article class="card">
-                <h3>流体与燃烧</h3>
-                <p>关注高速流动与反应流问题中物理过程和数值处理之间的关系。</p>
-            </article>
-            <article class="card">
-                <h3>计算科学</h3>
-                <p>利用数值方法和计算工具来处理复杂工程系统中的模拟问题。</p>
-            </article>
-            <article class="card">
-                <h3>CFD 建模</h3>
-                <p>把计算流体力学作为研究工具，也作为理解复杂流动的一种方式。</p>
-            </article>
+            <aside class="page-intro__side">
+                <span class="label">当前状态</span>
+                <p>Georgia Tech 航空航天工程博士生，同时也在继续学 CSE 方向的内容。</p>
+                <ul>
+                    <li>界面捕捉方法</li>
+                    <li>两相流与压缩流</li>
+                    <li>反应流和爆轰相关模拟</li>
+                </ul>
+            </aside>
         </div>
     </section>
 
-    <section class="panel">
+    <section class="section" data-reveal>
         <div class="section-head">
             <div>
-                <span class="section-kicker">教育经历</span>
-                <h2>从 Virginia Tech 到 Georgia Tech。</h2>
+                <span class="eyebrow">当前方向</span>
+                <h2 class="section-title">最近反复回到的三块。</h2>
             </div>
-            <p>学习路径横跨航天工程与计算科学，并逐渐聚焦到数值模拟相关问题。</p>
+            <p>具体问题会变，但大方向基本都绕着这三块在走。</p>
+        </div>
+        <div class="tab-bar" data-tabs="research">
+            <button class="tab-button is-active" type="button" data-tab-target="interface" aria-selected="true">界面捕捉</button>
+            <button class="tab-button" type="button" data-tab-target="two-phase" aria-selected="false">两相流</button>
+            <button class="tab-button" type="button" data-tab-target="detonation" aria-selected="false">爆轰</button>
+        </div>
+
+        <div class="tab-panel" data-tab-panel="research" data-panel-id="interface">
+            <div class="panel-grid">
+                <article class="panel-card">
+                    <span class="feature-card__label">方向</span>
+                    <h3 id="interface-tracking">界面捕捉</h3>
+                    <p>我一直会反复想到的问题之一，是在系统很复杂、流动很不稳定的时候，界面到底应该怎样表示得足够干净。</p>
+                </article>
+                <article class="panel-card">
+                    <span class="feature-card__label">关注点</span>
+                    <h3>既要尖锐，也要稳定</h3>
+                    <p>光把界面画出来不够。方法本身还得在困难工况下站得住，不把整个计算拖垮。</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-tab-panel="research" data-panel-id="two-phase" hidden>
+            <div class="panel-grid">
+                <article class="panel-card">
+                    <span class="feature-card__label">方向</span>
+                    <h3 id="two-phase-flow">两相流</h3>
+                    <p>我更感兴趣的是那种界面真的在主导整体动力学，而不是只作为一条需要追踪的边界存在的情况。</p>
+                </article>
+                <article class="panel-card">
+                    <span class="feature-card__label">关注点</span>
+                    <h3>界面不只是边界</h3>
+                    <p>一旦相间作用真正决定了系统行为，数值方法本身就会直接影响我们对物理的理解。</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-tab-panel="research" data-panel-id="detonation" hidden>
+            <div class="panel-grid">
+                <article class="panel-card">
+                    <span class="feature-card__label">方向</span>
+                    <h3 id="detonation-modeling">爆轰建模</h3>
+                    <p>反应流、激波、强梯度和不稳定结构叠在一起的时候，问题本身就足够有挑战，也足够值得做。</p>
+                </article>
+                <article class="panel-card">
+                    <span class="feature-card__label">关注点</span>
+                    <h3>强梯度就是问题本身</h3>
+                    <p>这类问题里，后处理和数值方法都不能太“好看”，而是要尽量诚实地反映真正发生的事情。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" data-reveal>
+        <div class="section-head">
+            <div>
+                <span class="eyebrow">真实来源</span>
+                <h2 class="section-title">放几段会反复看的可视化。</h2>
+            </div>
+            <p>这里放几段公开视频素材，都是我觉得和这页内容比较贴近的。</p>
+        </div>
+        <div class="motion-grid">
+            <article class="motion-card">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="https://svs.gsfc.nasa.gov/vis/a010000/a010600/a010685/lcross_plume_model_appletv.webmhd.webm" type="video/webm">
+                </video>
+                <div class="motion-card__body">
+                    <span class="motion-card__meta">Plume / NASA SVS</span>
+                    <h3>LCROSS 羽流模型</h3>
+                    <p>NASA SVS 的一段羽流模型片段。</p>
+                    <a class="feature-card__link" href="https://svs.gsfc.nasa.gov/10685" target="_blank" rel="noreferrer">查看来源</a>
+                </div>
+            </article>
+            <article class="motion-card">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="https://upload.wikimedia.org/wikipedia/commons/6/6f/A_classic_example_of_a_von_K%C3%A1rm%C3%A1n_vortex_street_from_Socorro_Island_off_the_coast_of_Mexico_%28CIRA_2018-04-05%29.webm" type="video/webm">
+                </video>
+                <div class="motion-card__body">
+                    <span class="motion-card__meta">Flow / NOAA-CIRA</span>
+                    <h3>Von Karman 涡街</h3>
+                    <p>虽然不是 CFD 后处理图，但流动结构很直观。</p>
+                    <a class="feature-card__link" href="https://commons.wikimedia.org/wiki/File:A_classic_example_of_a_von_K%C3%A1rm%C3%A1n_vortex_street_from_Socorro_Island_off_the_coast_of_Mexico_(CIRA_2018-04-05).webm" target="_blank" rel="noreferrer">查看来源</a>
+                </div>
+            </article>
+            <article class="motion-card">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014892/14892_CMEstrikesEarth_1080.webm" type="video/webm">
+                </video>
+                <div class="motion-card__body">
+                    <span class="motion-card__meta">Particles / NASA SVS</span>
+                    <h3>粒子场可视化</h3>
+                    <p>NASA 的一段粒子流可视化。</p>
+                    <a class="feature-card__link" href="https://svs.gsfc.nasa.gov/14892" target="_blank" rel="noreferrer">查看来源</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" data-reveal>
+        <div class="section-head">
+            <div>
+                <span class="eyebrow">学术路径</span>
+                <h2 class="section-title">Virginia Tech 和 Georgia Tech。</h2>
+            </div>
+            <p>整体路径大致沿着航空航天和计算科学展开，Georgia Tech 是研究生阶段的中心。</p>
         </div>
         <div class="timeline">
-            <article class="timeline-item">
-                <div class="timeline-item__number">B.S.</div>
-                <h3>本科</h3>
-                <ul>
-                    <li>Virginia Tech 航空航天工程，2016-2018</li>
-                    <li>Georgia Tech 航空航天工程，2018-2021</li>
-                </ul>
+            <article class="timeline-card">
+                <span class="timeline-card__year">2016-2018</span>
+                <h3>Virginia Tech 航空航天工程</h3>
+                <p>本科前期在 Virginia Tech。</p>
             </article>
-            <article class="timeline-item">
-                <div class="timeline-item__number">M.S.</div>
-                <h3>硕士</h3>
-                <ul>
-                    <li>Georgia Tech 航空航天工程，2021-2022</li>
-                    <li>Georgia Tech 计算科学与工程，2023-</li>
-                </ul>
+            <article class="timeline-card">
+                <span class="timeline-card__year">2018-2021</span>
+                <h3>Georgia Tech 航空航天工程</h3>
+                <p>转到 Georgia Tech 完成本科，并继续留校。</p>
             </article>
-            <article class="timeline-item">
-                <div class="timeline-item__number">Ph.D.</div>
-                <h3>博士</h3>
-                <ul>
-                    <li>Georgia Tech 航空航天工程，2022-</li>
-                </ul>
-                <p>目前博士阶段的工作也还是围绕模拟、高速流和复杂界面问题展开。</p>
+            <article class="timeline-card">
+                <span class="timeline-card__year">2021-2022</span>
+                <h3>Georgia Tech 硕士</h3>
+                <p>航空航天工程硕士阶段，进一步往模拟和数值方法靠拢。</p>
             </article>
-            <article class="timeline-item">
-                <div class="timeline-item__number">Links</div>
-                <h3>项目与院系链接</h3>
-                <ul>
-                    <li><a href="https://ae.gatech.edu/" target="_blank">Georgia Tech Aerospace Engineering</a></li>
-                    <li><a href="https://www.aoe.vt.edu/" target="_blank">Virginia Tech Aerospace and Ocean Engineering</a></li>
-                </ul>
+            <article class="timeline-card">
+                <span class="timeline-card__year">2022-现在</span>
+                <h3>Georgia Tech 博士与 CSE</h3>
+                <p>继续在 AE 读博，同时补充 CSE 方向的训练。</p>
             </article>
         </div>
     </section>
 
-    <section class="panel">
+    <section class="section" data-reveal>
         <div class="section-head">
             <div>
-                <span class="section-kicker">资源</span>
-                <h2>常用文档的直接入口。</h2>
+                <span class="eyebrow">资源</span>
+                <h2 class="section-title">最常用的几个入口。</h2>
             </div>
-            <p>把最常需要的简历和资料包放在这里，方便快速访问。</p>
+            <p>最常用的入口基本就在下面。</p>
         </div>
         <div class="resource-grid">
             <article class="resource-card">
-                <span class="status-pill">PDF</span>
+                <span class="resource-card__label">PDF</span>
                 <h3>简历</h3>
-                <p>可直接在新标签页打开当前简历。</p>
-                <div class="button-row">
-                    <a class="button" href="Kaiqun_Peng_Resume.pdf" target="_blank">打开简历</a>
-                </div>
+                <p>背景、教育经历和联系方式的最快概览。</p>
+                <a class="resource-card__link" href="Weiqing_CV_zh.html">打开简历页</a>
             </article>
             <article class="resource-card">
-                <span class="status-pill status-gold">Archive</span>
-                <h3>笔记资料包</h3>
-                <p>课程、考试准备和技术学习相关资料的压缩包。</p>
-                <div class="button-row">
-                    <a class="button button-secondary" href="Notes.zip">下载资料</a>
-                </div>
+                <span class="resource-card__label">压缩包</span>
+                <h3>笔记包</h3>
+                <p>当前的学习资料和笔记整理，都在这个下载包里。</p>
+                <a class="resource-card__link" href="Notes.zip">下载笔记</a>
             </article>
             <article class="resource-card">
-                <span class="status-pill">Focus</span>
-                <h3>后续整理方向</h3>
-                <p>后面我会继续把资格考试准备和专题笔记整理得更系统一些。</p>
+                <span class="resource-card__label">院系链接</span>
+                <h3>Georgia Tech AE</h3>
+                <p>如果需要学科背景或项目上下文，这通常是最直接的外链之一。</p>
+                <a class="resource-card__link" href="https://ae.gatech.edu/" target="_blank" rel="noreferrer">打开官网</a>
             </article>
         </div>
     </section>
@@ -148,13 +227,13 @@
     <div class="site-footer__inner">
         <div>
             <strong>彭凯群</strong>
-            <p>把研究背景、教育经历和常用资源放在一起，方便查看。</p>
+            <p>研究方向、学术路径和几个最常用的入口，放在同一页里。</p>
         </div>
         <div class="footer-links">
             <a href="index_zh.html">首页</a>
             <a href="Articles_zh.html">笔记</a>
+            <a href="Weiqing_CV_zh.html">简历</a>
             <a href="Acedemics.html">EN</a>
-            <a href="Kaiqun_Peng_Resume.pdf" target="_blank">简历</a>
         </div>
     </div>
 </footer>
