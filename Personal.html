@@ -1,83 +1,147 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-  	<title>Photo Gallery</title>
-        <link rel="stylesheet" href="Slideshow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Kaiqun Peng</title>
+    <meta name="description" content="A small photo gallery from Kaiqun Peng featuring Georgia Tech and campus images.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<h1>Photo Gallery</h1>
-  <h2 style="margin-top: 20px;color: red;">GT's Summer</h2>
+<header class="site-header">
+    <div class="nav-shell">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">KP</span>
+            <span class="brand-copy">
+                <strong>Kaiqun Peng</strong>
+                <span>Research, notes, and life outside the lab</span>
+            </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+            <a href="index.html">Home</a>
+            <a href="Acedemics.html">Academics</a>
+            <a href="Articles.html">Notes</a>
+            <a href="Personal.html" aria-current="page">Gallery</a>
+            <a href="Games.html">Games</a>
+            <a href="Personal_zh.html">中文</a>
+            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">Resume</a>
+        </nav>
+    </div>
+</header>
 
-<!-- Container for the image gallery -->
-<div class="row">
-  <div class="column">
+<main class="page-shell">
+    <section class="panel page-intro">
+        <span class="eyebrow">Gallery</span>
+        <h1>A visual break from equations, grids, and solvers.</h1>
+        <p>I keep some campus and city photos here.</p>
+    </section>
 
-    <a href="GT_Pic/P1.jpg" target="_blank">
-      <img src="GT_Pic/P1.jpg">
-    </a>
-    <a href="GT_Pic/P5.jpg" target="_blank">
-      <img src="GT_Pic/P5.jpg">
-    </a>
-    <a href="GT_Pic/P9.jpg" target="_blank">
-      <img src="GT_Pic/P9.jpg">
-    </a>
-  </div>
-  <div class="column">
-    <a href="GT_Pic/P2.jpg" target="_blank">
-      <img src="GT_Pic/P2.jpg">
-    </a>
-    <a href="GT_Pic/P6.jpg" target="_blank">
-      <img src="GT_Pic/P6.jpg">
-    </a>
-    <a href="GT_Pic/P10.jpg" target="_blank">
-      <img src="GT_Pic/P10.jpg">
-    </a>
-  </div>
-  <div class="column">
-    <a href="GT_Pic/P3.jpg" target="_blank">
-      <img src="GT_Pic/P3.jpg">
-    </a>
-    <a href="GT_Pic/P7.jpg" target="_blank">
-      <img src="GT_Pic/P7.jpg">
-    </a>
-  </div>
-  <div class="column">
-    <a href="GT_Pic/P4.jpg" target="_blank">
-      <img src="GT_Pic/P4.jpg">
-    </a>
-    <a href="GT_Pic/P8.jpg" target="_blank">
-      <img src="GT_Pic/P8.jpg">
-    </a>
-  </div>
-</div>
+    <section class="panel">
+        <div class="section-head">
+            <div>
+                <span class="section-kicker">Georgia Tech moments</span>
+                <h2>Scenes collected around Atlanta and campus life.</h2>
+            </div>
+            <p>A few favorite images pulled from the existing photo folders and arranged in a cleaner visual layout.</p>
+        </div>
+        <div class="gallery-grid">
+            <a class="gallery-card" href="GT_Pic/P1.jpg" target="_blank">
+                <img src="GT_Pic/P1.jpg" alt="Georgia Tech photo 1">
+                <h3>Light across campus</h3>
+                <p>One of the stronger frames from the Georgia Tech collection.</p>
+            </a>
+            <a class="gallery-card" href="GT_Pic/P2.jpg" target="_blank">
+                <img src="GT_Pic/P2.jpg" alt="Georgia Tech photo 2">
+                <h3>City detail</h3>
+                <p>Urban textures around the Georgia Tech environment.</p>
+            </a>
+            <a class="gallery-card" href="GT_Pic/P3.jpg" target="_blank">
+                <img src="GT_Pic/P3.jpg" alt="Georgia Tech photo 3">
+                <h3>Open air</h3>
+                <p>A quieter campus frame from the existing folder.</p>
+            </a>
+            <a class="gallery-card" href="GT_Pic/P5.jpg" target="_blank">
+                <img src="GT_Pic/P5.jpg" alt="Georgia Tech photo 5">
+                <h3>Afternoon color</h3>
+                <p>Bright seasonal contrast and cleaner composition.</p>
+            </a>
+            <a class="gallery-card" href="GT_Pic/P8.jpg" target="_blank">
+                <img src="GT_Pic/P8.jpg" alt="Georgia Tech photo 8">
+                <h3>Looking up</h3>
+                <p>One I like for the upward perspective.</p>
+            </a>
+            <a class="gallery-card" href="GT_Pic/P10.jpg" target="_blank">
+                <img src="GT_Pic/P10.jpg" alt="Georgia Tech photo 10">
+                <h3>Campus rhythm</h3>
+                <p>A campus frame I wanted to keep.</p>
+            </a>
+        </div>
+    </section>
 
-<!-- Container for the image gallery -->
-<h2 style="margin-top: 20px;color: black;">GT's Campus</h2>
-<div class="row">
-  <div class="column">
-    <img src="Campus/P1-min.jpg">
-    <img src="Campus/P4-min.jpg">
-    <img src="Campus/P9-min.jpg">
-  </div>
-  <div class="column">
-    <img src="Campus/P2-min.jpg">
-    <img src="Campus/P6-min.jpg">
-    <img src="Campus/P10-min.jpg">
-  </div>
-  <div class="column">
-    <img src="Campus/P3-min.jpg">
-    <img src="Campus/P7-min.jpg">
-    <img src="Campus/P11-min.jpg">
-  </div>
-  <div class="column"> 
-    <img src="Campus/P4-min.jpg">
-    <img src="Campus/P8-min.jpg">
-    <img src="Campus/P12-min.jpg">
-   
-  </div>
-</div>
+    <section class="panel">
+        <div class="section-head">
+            <div>
+                <span class="section-kicker">Campus collection</span>
+                <h2>Another set of scenes kept lighter and simpler.</h2>
+            </div>
+            <p>The second gallery shifts to a quieter set of campus images and architectural details.</p>
+        </div>
+        <div class="gallery-grid">
+            <a class="gallery-card" href="Campus/P1-min.jpg" target="_blank">
+                <img src="Campus/P1-min.jpg" alt="Campus photo 1">
+                <h3>Spring frame</h3>
+                <p>A softer campus detail.</p>
+            </a>
+            <a class="gallery-card" href="Campus/P3-min.jpg" target="_blank">
+                <img src="Campus/P3-min.jpg" alt="Campus photo 3">
+                <h3>Quiet geometry</h3>
+                <p>Architectural rhythm through a calmer crop.</p>
+            </a>
+            <a class="gallery-card" href="Campus/P5-min.jpg" target="_blank">
+                <img src="Campus/P5-min.jpg" alt="Campus photo 5">
+                <h3>In-between spaces</h3>
+                <p>One of the more relaxed images from the set.</p>
+            </a>
+            <a class="gallery-card" href="Campus/P7-min.jpg" target="_blank">
+                <img src="Campus/P7-min.jpg" alt="Campus photo 7">
+                <h3>Sky and structure</h3>
+                <p>A simple frame that still feels distinct.</p>
+            </a>
+            <a class="gallery-card" href="Campus/P9-min.jpg" target="_blank">
+                <img src="Campus/P9-min.jpg" alt="Campus photo 9">
+                <h3>Daylight detail</h3>
+                <p>Clean color and strong contrast.</p>
+            </a>
+            <a class="gallery-card" href="Campus/P12-min.jpg" target="_blank">
+                <img src="Campus/P12-min.jpg" alt="Campus photo 12">
+                <h3>End note</h3>
+                <p>A quieter one to end on.</p>
+            </a>
+        </div>
+    </section>
+</main>
 
-<a href="index.html" style="margin-top: 60px; font-size: 27px;">Back to HomePage</a>
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <div>
+            <strong>Kaiqun Peng</strong>
+            <p>A small collection of photos I wanted to keep here.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="Articles.html">Notes</a>
+            <a href="Personal_zh.html">中文</a>
+            <a href="Games.html">Games</a>
+        </div>
+    </div>
+</footer>
+
+<script src="site.js"></script>
 </body>
 </html>

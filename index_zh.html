@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彭凯群 | 个人主页</title>
+    <meta name="description" content="彭凯群个人主页，包含研究方向、学术背景、笔记资源、照片和简历入口。">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="nav-shell">
+        <a class="brand" href="index_zh.html">
+            <span class="brand-mark">KP</span>
+            <span class="brand-copy">
+                <strong>彭凯群</strong>
+                <span>研究、笔记与生活片段</span>
+            </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">切换导航</span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+            <a href="index_zh.html" aria-current="page">首页</a>
+            <a href="Acedemics_zh.html">学术</a>
+            <a href="Articles_zh.html">笔记</a>
+            <a href="Personal_zh.html">相册</a>
+            <a href="Games_zh.html">兴趣</a>
+            <a href="index.html">EN</a>
+            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">简历</a>
+        </nav>
+    </div>
+</header>
+
+<main class="page-shell">
+    <section class="panel hero reveal">
+        <div class="hero__layout">
+            <div>
+                <span class="eyebrow">Georgia Tech</span>
+                <h1>彭凯群</h1>
+                <p class="hero-lead">航空航天工程博士生，研究兴趣主要包括界面追踪方法、两相流以及爆轰相关数值模拟。</p>
+                <div class="button-row">
+                    <a class="button" href="Acedemics_zh.html">学术</a>
+                    <a class="button button-secondary" href="Kaiqun_Peng_Resume.pdf" target="_blank">简历</a>
+                    <a class="button button-ghost" href="Articles_zh.html">笔记</a>
+                </div>
+                <div class="hero-meta">
+                    <span class="pill">CFD</span>
+                    <span class="pill">两相流</span>
+                    <span class="pill">爆轰模拟</span>
+                </div>
+                <div class="mini-stats">
+                    <div class="mini-stat">
+                        <strong>研究</strong>
+                        <span>关注界面、波系与复杂流动结构相关的数值方法。</span>
+                    </div>
+                    <div class="mini-stat">
+                        <strong>路径</strong>
+                        <span>从 Virginia Tech 到 Georgia Tech，横跨航天工程与计算科学。</span>
+                    </div>
+                    <div class="mini-stat">
+                        <strong>站点内容</strong>
+                        <span>除了学术信息，也保留了笔记、照片和一些更轻松的页面。</span>
+                    </div>
+                </div>
+            </div>
+            <aside class="hero-card">
+                <div class="portrait-frame">
+                    <img src="My_photo.jpg" alt="彭凯群照片">
+                </div>
+                <h2>联系方式</h2>
+                <div class="link-list">
+                    <a class="link-chip" href="mailto:kaiqun98@gatech.edu">
+                        <span>学校邮箱</span>
+                        <small>kaiqun98@gatech.edu</small>
+                    </a>
+                    <a class="link-chip" href="mailto:kaiqun2023@gmail.com">
+                        <span>个人邮箱</span>
+                        <small>kaiqun2023@gmail.com</small>
+                    </a>
+                    <a class="link-chip" href="https://www.linkedin.com/in/kaiqun-peng-ae-doc" target="_blank">
+                        <span>LinkedIn</span>
+                        <small>Professional profile</small>
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section class="panel interactive-lab reveal">
+        <div class="section-head">
+            <div>
+                <span class="section-kicker">互动模块</span>
+                <h2>Rocket. Combustion. CFD.</h2>
+            </div>
+            <p>首页里放一个轻量的小模拟区。可以切换模式，也可以点一下触发，不只是静态介绍。</p>
+        </div>
+        <div class="lab-layout sim-widget" data-mode="rocket">
+            <div class="sim-controls">
+                <div class="sim-chip-row">
+                    <button class="sim-chip is-active" type="button" data-mode="rocket">Rocket</button>
+                    <button class="sim-chip" type="button" data-mode="combustion">Combustion</button>
+                    <button class="sim-chip" type="button" data-mode="cfd">CFD</button>
+                </div>
+                <article class="sim-copy" data-copy="rocket">
+                    <h3>火箭发射</h3>
+                    <p>一个简单的发射场景，有待发射状态、尾焰和触发后的上升过程。</p>
+                    <ul>
+                        <li>待机时会有轻微尾焰闪动</li>
+                        <li>点击一次就能触发发射</li>
+                        <li>是轻量可视化，不是完整游戏</li>
+                    </ul>
+                </article>
+                <article class="sim-copy" data-copy="combustion" hidden>
+                    <h3>燃烧羽流</h3>
+                    <p>一个偏暗的燃烧腔画面，包含热羽流、火焰粒子和脉冲增强效果。</p>
+                    <ul>
+                        <li>有持续上升的热流和火星</li>
+                        <li>点击可以触发更强一波燃烧</li>
+                        <li>更接近“燃烧感觉”的可视化表达</li>
+                    </ul>
+                </article>
+                <article class="sim-copy" data-copy="cfd" hidden>
+                    <h3>CFD 流场</h3>
+                    <p>粒子流过一个障碍物，在后方形成简化的尾迹和偏转。</p>
+                    <ul>
+                        <li>粒子持续沿场线运动</li>
+                        <li>点击可以加入更明显的扰动</li>
+                        <li>用轻量方式表达流场的动态感</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="sim-panel">
+                <canvas class="sim-canvas" width="720" height="420" aria-label="互动模拟"></canvas>
+                <div class="sim-toolbar">
+                    <div class="sim-status" data-sim-status>Rocket 模式已就绪。</div>
+                    <button class="button sim-trigger" type="button" data-sim-trigger>触发</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel reveal">
+        <div class="section-head">
+            <div>
+                <span class="section-kicker">研究方向</span>
+                <h2>当前关注的问题。</h2>
+            </div>
+            <p>整体工作落在计算流体力学、多相流和反应流模拟的交叉地带。</p>
+        </div>
+        <div class="card-grid">
+            <article class="card">
+                <h3>界面追踪</h3>
+                <p>研究复杂两相系统中移动界面的数值处理方法。</p>
+            </article>
+            <article class="card">
+                <h3>两相流模拟</h3>
+                <p>关注界面行为显著影响整体流动演化的问题。</p>
+            </article>
+            <article class="card">
+                <h3>爆轰波建模</h3>
+                <p>研究具有强梯度与复杂波结构的高速反应流。</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="panel reveal">
+        <div class="section-head">
+            <div>
+                <span class="section-kicker">Experience</span>
+                <h2>我一直会回到的三个关键词。</h2>
+            </div>
+            <p>除了信息本身，这三个方向也决定了首页应该呈现出来的节奏和气质。</p>
+        </div>
+        <div class="experience-grid">
+            <article class="experience-card">
+                <strong>Rocket</strong>
+                <h3>发射感</h3>
+                <p>高速、结构、以及系统即将离开地面的那种张力。</p>
+            </article>
+            <article class="experience-card">
+                <strong>Combustion</strong>
+                <h3>热与不稳定性</h3>
+                <p>反应流问题本身就有很强的视觉张力，同时也很考验数值处理。</p>
+            </article>
+            <article class="experience-card">
+                <strong>CFD</strong>
+                <h3>流动的图案感</h3>
+                <p>即使是简化的流场，只要有尾迹、弯曲和层次，画面就会很有吸引力。</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="panel reveal">
+        <div class="split-layout">
+            <div>
+                <span class="section-kicker">学术背景</span>
+                <h2>学习路径。</h2>
+                <ul class="bullet-clean">
+                    <li>Virginia Tech 航空航天工程，2016-2018</li>
+                    <li>Georgia Tech 航空航天工程，2018-2021</li>
+                    <li>Georgia Tech 航空航天工程硕士，2021-2022</li>
+                    <li>Georgia Tech 航空航天工程博士，2022-</li>
+                    <li>Georgia Tech CSE 学习经历，2023-</li>
+                </ul>
+            </div>
+            <div>
+                <span class="section-kicker">快速入口</span>
+                <h2>从这里开始。</h2>
+                <div class="link-list">
+                    <a class="link-chip" href="Acedemics_zh.html">
+                        <span>学术页</span>
+                        <small>研究方向、教育背景与资源入口</small>
+                    </a>
+                    <a class="link-chip" href="Articles_zh.html">
+                        <span>笔记页</span>
+                        <small>下载资料与后续整理方向</small>
+                    </a>
+                    <a class="link-chip" href="Personal_zh.html">
+                        <span>相册页</span>
+                        <small>校园照片与日常记录</small>
+                    </a>
+                </div>
+                <div class="split-note">
+                    <strong>英文版也可用。</strong>
+                    <p>如果你更习惯英文阅读，可以随时通过导航切回英文页面。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <div>
+            <strong>彭凯群</strong>
+            <p>把研究兴趣、学术资源和一些个人内容收在一起的个人主页。</p>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:kaiqun98@gatech.edu">Email</a>
+            <a href="https://www.linkedin.com/in/kaiqun-peng-ae-doc" target="_blank">LinkedIn</a>
+            <a href="index.html">EN</a>
+            <a href="Kaiqun_Peng_Resume.pdf" target="_blank">简历</a>
+        </div>
+    </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,20 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.25">
-        <title>Kaiqun Peng's Articles</title>
-        <link rel="stylesheet" href="styles.css">
-      </head>
-      <body>
-      <h3 style="font-size: 50px;"> Articles </h3>
-      <p style="font-size:  40px;"> Currently a empty page. Wish it will full of contents oneday</p>
-      <p style="font-size:  30px;"><a href="index.html">Back to Previous Page</a></p>
-          
-          <footer>
-            <p style="font-size: 12px;">Copyright © 2023 Kaiqun Peng </p>
-            <p style="font-size: 12px;">
-              All rights reserved. Images and Gifs used on this website are taken from <a href="https://gifer.com/en">https://gifer.com/en</a>.</p>
-          </footer>
-      </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes | Kaiqun Peng</title>
+    <meta name="description" content="Notes, future writing topics, and downloadable resources from Kaiqun Peng.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="nav-shell">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">KP</span>
+            <span class="brand-copy">
+                <strong>Kaiqun Peng</strong>
+                <span>Research, notes, and life outside the lab</span>
+            </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+            <a href="index.html">Home</a>
+            <a href="Acedemics.html">Academics</a>
+            <a href="Articles.html" aria-current="page">Notes</a>
+            <a href="Personal.html">Gallery</a>
+            <a href="Games.html">Games</a>
+            <a href="Articles_zh.html">中文</a>
+            <a class="nav-resume" href="Kaiqun_Peng_Resume.pdf" target="_blank">Resume</a>
+        </nav>
+    </div>
+</header>
+
+<main class="page-shell">
+    <section class="panel page-intro">
+        <span class="eyebrow">Notes and writing</span>
+        <h1>A cleaner home for resources, drafts, and things still forming.</h1>
+        <p>I keep downloads, study material, and unfinished note ideas here.</p>
+    </section>
+
+    <section class="panel">
+        <div class="link-grid">
+            <article class="note-card">
+                <span class="status-pill">Download</span>
+                <h3>Notes archive</h3>
+                <p>The easiest place to start if you are looking for collected material rather than polished prose.</p>
+                <div class="button-row">
+                    <a class="button" href="Notes.zip">Download zip</a>
+                </div>
+            </article>
+            <article class="note-card">
+                <span class="status-pill status-gold">Reference</span>
+                <h3>Resume snapshot</h3>
+                <p>A direct link to the current resume for quick context or background.</p>
+                <div class="button-row">
+                    <a class="button button-secondary" href="Kaiqun_Peng_Resume.pdf" target="_blank">Open PDF</a>
+                </div>
+            </article>
+            <article class="note-card">
+                <span class="status-pill">In progress</span>
+                <h3>Writing still to come</h3>
+                <p>I plan to turn this into a larger collection of notes, short explanations, and research-adjacent writing.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="section-head">
+            <div>
+                <span class="section-kicker">Likely topics</span>
+                <h2>What belongs here next.</h2>
+            </div>
+            <p>These are the topics I would most likely organize and write down over time.</p>
+        </div>
+        <div class="interest-grid">
+            <article class="interest-card">
+                <h3>Interface tracking notes</h3>
+                <p>Short explanations or reading notes about methods for moving interfaces and multiphase flow problems.</p>
+            </article>
+            <article class="interest-card">
+                <h3>Simulation workflow snippets</h3>
+                <p>Small practical notes about modeling, code organization, or computational workflows that are actually useful to revisit.</p>
+            </article>
+            <article class="interest-card">
+                <h3>Study resources</h3>
+                <p>Material that helps bridge the space between courses, qualifying exam prep, and hands-on numerical work.</p>
+            </article>
+        </div>
+        <div class="note-banner">
+            <strong>Still evolving:</strong>
+            <span>I expect this section to fill out gradually as I organize more notes and reading material.</span>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <div>
+            <strong>Kaiqun Peng</strong>
+            <p>Notes, downloads, and future writing directions collected in one place.</p>
+        </div>
+        <div class="footer-links">
+            <a href="Acedemics.html">Academics</a>
+            <a href="Personal.html">Gallery</a>
+            <a href="Articles_zh.html">中文</a>
+            <a href="Notes.zip">Download notes</a>
+        </div>
+    </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
 </html>
